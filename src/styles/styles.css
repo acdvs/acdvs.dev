@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
+@layer base {
+  h1, h2, h3, h4, h5, h6, p, span, a, div {
+    @apply text-white;
+  }
+
+  h1 {
+    @apply font-montserrat text-[2.8rem] font-[1000];
+  }
+
+  h2 {
+    @apply text-[1.25rem] font-bold mb-2;
+  }
+
+  p, span, a, div {
+    @apply font-rubik font-semibold text-white;
+  }
+
+  a {
+    @apply text-blue font-bold decoration-0 uppercase;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply border-b-2 border-transparent py-4 px-4 hover:border-lightBlue hover:text-lightBlue transition-colors;
+  }
+
+  .btn-secondary {
+    @apply hover:text-mediumBlue transition-colors;
+  }
+}
+
+@layer utilities {
+  .bg-gradient {
+    background-color: #000;
+    background: linear-gradient(320deg, #0c183b, #000000);
+    background-attachment: fixed;
+  }
+
+  .header-gradient {
+    background-color: transparent;
+    background: linear-gradient(0deg, transparent, #0f0f0f 50%);
+  }
+
+  .text-gradient {
+    color: #33b4f7;
+    background: linear-gradient(100deg, #354ffe, #33b4f7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+  }
+
+  .offset-anchor {
+    position: relative;
+    top: -90px;
+  }
+}

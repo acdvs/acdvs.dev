@@ -1,0 +1,57 @@
+import Section from '../Section';
+import Project from '../Project';
+
+function Projects() {
+  return (
+    <Section title="Projects">
+      <ul
+        id="project-list"
+        className="md:grid md:gap-12 md:auto-rows-auto md:grid-cols-2"
+      >
+        <Project
+          title="yeahbutdvds.com"
+          date="2022"
+          description="A livestream overlay generator that displays a random emote from the user's list in bouncing DVD logo style."
+          tags={['JavaScript', 'React', 'SCSS', 'Netlify']}
+          demoURL="https://www.yeahbutdvds.com/"
+          githubURL="https://github.com/Mahcks/YEAHBUTDVDs"
+        />
+        <Project
+          title="dealbot.gg"
+          date="2021"
+          description="An open-source Discord bot for quickly and easily looking up game deals via IsThereAnyDeal."
+          tags={['JavaScript', 'discord.js', 'Node.js', 'PostgreSQL', 'DigitalOcean App']}
+          demoURL="https://dealbot.gg"
+          githubURL="https://github.com/acdvs/isthereanydeal-lookup"
+        />
+        <Project
+          title="eslint-plugin-suitescript"
+          date="2020"
+          description="An NPM package and ESLint plugin for coding with NetSuite's SuiteScript v1/2 API. 500+ weekly downloads."
+          tags={['JavaScript', 'Node.js', 'ESLint', 'AST nodes']}
+          githubURL="https://github.com/acdvs/eslint-plugin-suitescript"
+          npmURL="https://www.npmjs.com/package/eslint-plugin-suitescript"
+        />
+        <Project
+          title="GroupMe Analyzer"
+          date="2018"
+          description="A tool for finding your group's top favorited messages with context in the past month."
+          tags={['JavaScript', 'React', 'Node.js']}
+        />
+        <Project
+          title="Super Snake"
+          date="2014"
+          description="A classic recreation of Snake. Change gameplay difficulty with options for speed, boundaries, obstacles, and board size."
+          tags={['JavaScript', 'HTML5 canvas']}
+          demoURL="https://supersnake.adam-davies.me"
+          githubURL="https://github.com/acdvs/super-snake"
+        />
+        <p className="text-darkTrans text-center col-span-2">
+          (This website was built with TypeScript, React, Tailwind, and Next.js!)
+        </p>
+      </ul>
+    </Section>
+  );
+}
+
+export default Projects;
