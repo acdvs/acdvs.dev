@@ -4,10 +4,7 @@ import Project from '../Project';
 function Projects() {
   return (
     <Section title="Projects">
-      <ul
-        id="project-list"
-        className="md:grid md:gap-12 md:auto-rows-auto md:grid-cols-2"
-      >
+      <ul className="md:grid md:gap-x-12 md:gap-y-8 md:auto-rows-auto md:grid-cols-2">
         <Project
           title="yeahbutdvds.com"
           date="2022"

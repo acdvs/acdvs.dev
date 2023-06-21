@@ -27,8 +27,8 @@ function Project({
         <h2 className="mb-0">{title}</h2>
         <span className="text-darkTrans">{date}</span>
       </div>
-      <p className="mb-4">{description}</p>
-      <ul className="flex flex-wrap mb-2">
+      <p className="mb-2">{description}</p>
+      <ul className="flex flex-wrap mb-0">
         {tags?.map((tag) => (
           <li
             key={tag}
