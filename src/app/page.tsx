@@ -7,7 +7,7 @@ export default function Home() {
       <Header />
       <main className="pb-[100px]">
         <div className="h-screen flex justify-center items-center mb-5">
-          <div className="px-4 w-100 position-absolute top-50 translate-middle-y">
+          <div className="max-w-xl px-10 position-absolute top-50 translate-middle-y">
             <div>
               <div className="flex justify-center">
                 <h1 className="mr-3">Hi, I'm</h1>
