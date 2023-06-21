@@ -11,7 +11,7 @@
   }
 
   h1 {
-    @apply font-montserrat text-[2.4rem] leading-6 font-black mb-4 xs:text-[2.8rem] xs:leading-9;
+    @apply font-montserrat text-[2.4rem] font-black mb-4 xs:text-[2.8rem];
   }
 
   h2 {
