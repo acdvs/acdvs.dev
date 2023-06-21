@@ -1,32 +1,16 @@
+import BrandIcon from './icons/Brand';
+import LinkedInIcon from './icons/LinkedIn';
+import GitHubIcon from './icons/GitHub';
+import StackOverflowIcon from './icons/StackOverflow';
+
 function Header() {
   return (
-    <header className="w-full fixed flex justify-between header-gradient">
-      <a href="#" className="btn-primary">
-        <svg className="h-8" viewBox="0 0 298 258">
-          <path fill="#3850ff" d="M149 73l86 148H98l-22 37h222L149 0 0 258h40" />
-          <path fill="#38b9ff" d="M150 134l-34 59h68l-34-59z" />
-        </svg>
-      </a>
+    <header className="w-full fixed flex justify-between md:p-5 header-gradient transition-[padding]">
+      <BrandIcon />
       <div className="flex">
-        <a
-          className="btn-primary [&:hover>svg]:fill-lightBlue"
-          href="https://github.com/acdvs"
-          target="_blank"
-        >
-          <svg className="h-8 fill-blue transition-colors" viewBox="0 0 520 512">
-            <path d="M488.63,261.56C488.63,135.29,386.27,32.93,260,32.93S31.37,135.29,31.37,261.56c0,100.23,64.49,185.38,154.23,216.25,5.47-3.95,11.78-8.82,11.78-17,0-12.58-.28-44.93-.28-44.93A158.47,158.47,0,0,1,173,417.55c-35.69,0-47-22.64-52.35-35.32-7-16.51-16-24.26-25.68-30.46-5.91-3.8-7.27-8.29-.43-9.57,31.59-5.92,39.66,35.62,60.76,42.25,15.06,4.72,34.42,2.68,44.05-3.52,1.27-12.68,10.47-23.66,18.13-29.44-53.66-5.12-85.47-23.66-102-53.45l-1.77-3.34-4.14-9.46-1.23-3.39c-5.16-15.12-7.45-32.44-7.45-51.79,0-34.34,10.76-47.3,25.21-65.61-11.05-39.15,4-65.91,4-65.91s23.23-4.79,67.13,26.48c23.79-10.14,87.24-11,117.26-2.26,18.41-12.11,52.11-29.29,65.71-24.48,3.68,5.89,11.61,23.08,4.82,60.82,4.61,8.28,28.6,25.92,28.69,75.77-.38,18.39-2.31,33.92-5.88,47.05l-2,6.71s-1.13,3.17-2.37,6.19L402,298.15c-15.92,34.77-48.57,47.75-101.33,53.15,17.1,10.7,22,24.13,22,60.47s-.48,41.22-.37,49.58c.1,7.39,6,12.7,11.32,16.72C423.79,447.41,488.63,362.06,488.63,261.56Z" />
-          </svg>
-        </a>
-        <a
-          className="btn-primary [&:hover>svg]:fill-lightBlue"
-          href="https://stackoverflow.com/users/4881192/adam"
-          target="_blank"
-        >
-          <svg className="h-8 fill-blue transition-colors" viewBox="-4 8 40 38">
-            <path d="M26 41v-9h4v13H0V32h4v9h22z" />
-            <path d="M23 34l.8-3-16.1-3.3L7 31l16 3zM9.2 23.2l15 7 1.4-3-15-7-1.4 3zm4.2-7.4L26 26.4l2.1-2.5-12.7-10.6-2.1 2.5zM21.5 8l-2.7 2 9.9 13.3 2.7-2L21.5 8zM7 38h16v-3H7v3z" />
-          </svg>
-        </a>
+        <LinkedInIcon />
+        <GitHubIcon />
+        <StackOverflowIcon />
       </div>
     </header>
   );

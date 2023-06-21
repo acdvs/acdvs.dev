@@ -1,9 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
 
 @layer base {
   h1, h2, h3, h4, h5, h6, p, span, a, div {
@@ -29,7 +29,15 @@
 
 @layer components {
   .btn-primary {
-    @apply border-b-2 border-transparent py-4 px-4 hover:border-lightBlue hover:text-lightBlue transition-colors;
+    @apply border-b-2 text-lg border-transparent py-4 px-4 hover:border-lightBlue hover:text-lightBlue transition-colors;
+
+    &:hover svg {
+      @apply fill-lightBlue;
+    }
+
+    & svg {
+      @apply h-8 fill-blue transition-colors;
+    }
   }
 
   .btn-secondary {
