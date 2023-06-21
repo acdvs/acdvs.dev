@@ -19,8 +19,8 @@ function Projects() {
         <Project
           title="dealbot.gg"
           date="2021"
-          description="An open-source Discord bot for quickly and easily looking up game deals via IsThereAnyDeal."
-          tags={['JavaScript', 'discord.js', 'Node.js', 'PostgreSQL', 'DigitalOcean App']}
+          description="A Discord bot for quickly and easily looking up PC game deals via IsThereAnyDeal. Currently receives over 10,000 monthly interactions."
+          tags={['TypeScript', 'discord.js', 'Node.js', 'PostgreSQL', 'DigitalOcean App']}
           demoURL="https://dealbot.gg"
           githubURL="https://github.com/acdvs/isthereanydeal-lookup"
         />
