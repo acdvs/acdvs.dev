@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <header className="w-full h-24 fixed p-3 flex justify-between header-gradient">
+    <header className="w-full fixed flex justify-between header-gradient">
       <a href="#" className="btn-primary">
         <svg className="h-8" viewBox="0 0 298 258">
           <path fill="#3850ff" d="M149 73l86 148H98l-22 37h222L149 0 0 258h40" />
