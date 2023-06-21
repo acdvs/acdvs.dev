@@ -56,9 +56,4 @@
     -webkit-text-fill-color: transparent;
     display: inline-block;
   }
-
-  .offset-anchor {
-    position: relative;
-    top: -90px;
-  }
 }
