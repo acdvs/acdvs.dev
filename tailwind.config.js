@@ -23,6 +23,11 @@ module.exports = {
       montserrat: ['Montserrat', ...defaultTheme.fontFamily.sans],
       rubik: ['Rubik', ...defaultTheme.fontFamily.sans],
     },
+    extend: {
+      screens: {
+        xs: '450px',
+      },
+    },
   },
   plugins: [],
 };
