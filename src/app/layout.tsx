@@ -3,7 +3,7 @@ import '@/styles/styles.css';
 export const metadata = {
   title: 'Adam Davies',
   description:
-    'Portfolio of Adam Davies, a full stack software engineer and open-source contributor from Houston, Texas.',
+    'Adam Davies is a full stack software engineer and open-source contributor with expertise in UI and UX design.',
   keywords: [
     'Adam Davies',
     'developer',
@@ -13,6 +13,9 @@ export const metadata = {
     'open source',
     'React',
   ],
+  alternates: {
+    canonical: 'https://adam-davies.me',
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
