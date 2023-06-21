@@ -71,7 +71,11 @@ type LinkProps = {
 
 function ProjectLink({ url, text }: LinkProps) {
   return (
-    <a href={url} className={cx('btn-secondary mr-6 mb-2', !url && 'text-darkTrans')}>
+    <a
+      href={url}
+      target="_blank"
+      className={cx('btn-secondary mr-6 mb-2', !url && 'text-darkTrans')}
+    >
       {text}
     </a>
   );
