@@ -7,11 +7,11 @@ function Projects() {
       <ul className="md:grid md:gap-x-12 md:gap-y-8 md:auto-rows-auto md:grid-cols-2">
         <Project
           title="yeahbutdvds.com"
-          date="2022"
+          date="2022-23"
           description="A livestream overlay generator that displays a random emote from the user's list in bouncing DVD logo style."
-          tags={['JavaScript', 'React', 'SCSS', 'Netlify']}
-          demoURL="https://www.yeahbutdvds.com/"
-          githubURL="https://github.com/Mahcks/YEAHBUTDVDs"
+          tags={['TypeScript', 'React', 'Next.js', 'SCSS', 'AWS']}
+          demoURL="https://yeahbutdvds.com/"
+          githubURL="https://github.com/omegastreamtv/YEAHBUTDVDs"
         />
         <Project
           title="dealbot.gg"
