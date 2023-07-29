@@ -6,6 +6,13 @@ function Projects() {
     <Section title="Projects">
       <ul className="md:grid md:gap-x-12 md:gap-y-8 md:auto-rows-auto md:grid-cols-2">
         <Project
+          title="Go Spotify"
+          date="2023"
+          description="A fast Go wrapper for Spotify's Web API"
+          tags={['Go']}
+          githubURL="https://github.com/omegastreamtv/Spotify"
+        />
+        <Project
           title="yeahbutdvds.com"
           date="2022-23"
           description="A livestream overlay generator that displays a random emote from the user's list in bouncing DVD logo style."
