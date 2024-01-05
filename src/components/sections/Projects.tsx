@@ -6,6 +6,12 @@ function Projects() {
     <Section title="Projects">
       <ul className="md:grid md:gap-x-12 md:gap-y-8 md:auto-rows-auto md:grid-cols-2">
         <Project
+          title="Super Snake 2.0"
+          date="2024"
+          description="A recreation of the classic Snake arcade game with difficulty modifiers."
+          tags={['TypeScript', 'React', 'Rust', 'WebAssembly', 'WebGL']}
+        />
+        <Project
           title="Go Spotify"
           date="2023"
           description="A fast Go wrapper for Spotify's Web API"
