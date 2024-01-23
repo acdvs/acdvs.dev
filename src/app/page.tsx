@@ -15,7 +15,7 @@ export default function Home() {
                 <h1>.</h1>
               </div>
               <p className="mb-10 text-center">
-                Full stack software engineer and open-source contributor with expertise in
+                Full stack software engineer and open source contributor with expertise in
                 UI and UX design.
               </p>
               <nav>

@@ -5,9 +5,9 @@ type ProjectProps = {
   date: string;
   description: string;
   tags?: string[];
-  demoURL?: string;
-  githubURL?: string;
-  npmURL?: string;
+  liveURL?: string;
+  sourceURL?: string;
+  packageURL?: string;
 };
 
 function Project({
@@ -15,11 +15,11 @@ function Project({
   date,
   description,
   tags,
-  demoURL,
-  githubURL,
-  npmURL,
+  liveURL,
+  sourceURL,
+  packageURL,
 }: ProjectProps) {
-  const noLinks = !demoURL && !githubURL && !npmURL;
+  const noLinks = !liveURL && !sourceURL && !packageURL;
 
   return (
     <li className="mb-8 md:mb-0">
@@ -39,19 +39,19 @@ function Project({
         ))}
       </ul>
       <ul className="flex">
-        {demoURL && (
+        {liveURL && (
           <li>
-            <ProjectLink url={demoURL} text="Check it out" />
+            <ProjectLink url={liveURL} text="Website" />
           </li>
         )}
-        {githubURL && (
+        {sourceURL && (
           <li>
-            <ProjectLink url={githubURL} text="View on GitHub" />
+            <ProjectLink url={sourceURL} text="GitHub" />
           </li>
         )}
-        {npmURL && (
+        {packageURL && (
           <li>
-            <ProjectLink url={npmURL} text="View on NPM" />
+            <ProjectLink url={packageURL} text="Package" />
           </li>
         )}
         {noLinks && (
@@ -70,7 +70,7 @@ type LinkProps = {
 };
 
 function ProjectLink({ url, text }: LinkProps) {
-  return (
+  return url ? (
     <a
       href={url}
       target="_blank"
@@ -78,6 +78,8 @@ function ProjectLink({ url, text }: LinkProps) {
     >
       {text}
     </a>
+  ) : (
+    <p className="text-darkTrans1 font-bold uppercase mr-6 mb-2">{text}</p>
   );
 }
 

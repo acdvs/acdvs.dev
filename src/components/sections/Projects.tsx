@@ -8,39 +8,39 @@ function Projects() {
         <Project
           title="Super Snake 2.0"
           date="2024"
-          description="A recreation of the classic Snake arcade game with difficulty modifiers."
-          tags={['TypeScript', 'React', 'Rust', 'WebAssembly', 'WebGL']}
+          description="A recreation of the classic Snake arcade game with a wider range of difficulty modifiers."
+          tags={['TypeScript', 'React', 'WebAssembly', 'Rust', 'WebGL']}
         />
         <Project
           title="Go Spotify"
           date="2023"
           description="A fast Go wrapper for Spotify's Web API"
           tags={['Go']}
-          githubURL="https://github.com/omegastreamtv/Spotify"
+          sourceURL="https://github.com/omegastreamtv/Spotify"
         />
         <Project
           title="yeahbutdvds.com"
           date="2022-23"
           description="A livestream overlay generator that displays a random emote from the user's list in bouncing DVD logo style."
           tags={['TypeScript', 'React', 'Next.js', 'SCSS', 'AWS']}
-          demoURL="https://yeahbutdvds.com/"
-          githubURL="https://github.com/omegastreamtv/YEAHBUTDVDs"
+          liveURL="https://yeahbutdvds.com"
+          sourceURL="https://github.com/omegastreamtv/YEAHBUTDVDs"
         />
         <Project
           title="dealbot.gg"
           date="2021"
           description="A Discord bot for quickly and easily looking up PC game deals via IsThereAnyDeal. Currently receives over 10,000 monthly interactions."
           tags={['TypeScript', 'discord.js', 'Node.js', 'PostgreSQL', 'DigitalOcean App']}
-          demoURL="https://dealbot.gg"
-          githubURL="https://github.com/acdvs/isthereanydeal-lookup"
+          liveURL="https://dealbot.gg"
+          sourceURL="https://github.com/acdvs/isthereanydeal-lookup"
         />
         <Project
           title="eslint-plugin-suitescript"
           date="2020"
           description="An NPM package and ESLint plugin for coding with NetSuite's SuiteScript v1/2 API. 500+ weekly downloads."
           tags={['JavaScript', 'Node.js', 'ESLint', 'AST nodes']}
-          githubURL="https://github.com/acdvs/eslint-plugin-suitescript"
-          npmURL="https://www.npmjs.com/package/eslint-plugin-suitescript"
+          sourceURL="https://github.com/acdvs/eslint-plugin-suitescript"
+          packageURL="https://www.npmjs.com/package/eslint-plugin-suitescript"
         />
         <Project
           title="GroupMe Analyzer"
@@ -51,12 +51,12 @@ function Projects() {
         <Project
           title="Super Snake"
           date="2014"
-          description="A classic recreation of Snake. Change gameplay difficulty with options for speed, boundaries, obstacles, and board size."
+          description="A recreation of the classic Snake arcade game with a wide range of difficulty modifiers."
           tags={['JavaScript', 'HTML5 canvas']}
-          demoURL="https://supersnake.adam-davies.me"
-          githubURL="https://github.com/acdvs/super-snake"
+          liveURL="https://supersnake.adam-davies.me"
+          sourceURL="https://github.com/acdvs/super-snake"
         />
-        <p className="text-darkTrans text-center col-span-2">
+        <p className="text-darkTrans1 text-center col-span-2">
           (This website was built with TypeScript, React, Tailwind, and Next.js!)
         </p>
       </ul>

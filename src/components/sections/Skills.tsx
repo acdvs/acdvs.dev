@@ -4,16 +4,23 @@ function Skills() {
   return (
     <Section title="Skills">
       <div className="mb-7">
-        <h2>Top Proficiencies</h2>
+        <h2>Front End</h2>
         <p>
-          TypeScript, JavaScript, React, Redux, Node.js, Next.js, Tailwind, SCSS,
-          CSS-in-JS, UI/UX design, GraphQL, MongoDB, PostgreSQL, API design, web
-          accessibility, microservices, CI/CD, documentation, Git, GitHub
+          TypeScript, JavaScript, React, Redux, Next.js, Tailwind, SCSS, CSS-in-JS, UI/UX
+          design, web accessibility, WebAssembly, WebGL
+        </p>
+      </div>
+      <div className="mb-7">
+        <h2>Back End</h2>
+        <p>
+          Node.js, Rust, Go, Python, GraphQL, MongoDB, PostgreSQL, API design, AWS
+          Amplify, AWS EC2, AWS ECS, AWS Lambda, DigitalOcean, microservices, CI/CD, Git,
+          GitHub
         </p>
       </div>
       <div className="mb-7">
         <h2>Learning</h2>
-        <p>Rust, WebAssembly, WebGL, Go, gRPC, Python, Docker, Kubernetes, AWS</p>
+        <p>gRPC, Docker, Kubernetes</p>
       </div>
       <div className="mb-7">
         <h2>Software</h2>
