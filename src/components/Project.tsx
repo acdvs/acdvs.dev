@@ -22,17 +22,17 @@ function Project({
   const noLinks = !liveURL && !sourceURL && !packageURL;
 
   return (
-    <li className="mb-8 md:mb-0">
+    <li className="mb-8 md:mb-0 [&:hover_.tag]:text-white">
       <div className="flex justify-between items-center mb-3">
         <h2 className="mb-0">{title}</h2>
-        <span className="text-darkTrans">{date}</span>
+        <span className="text-darkTrans1">{date}</span>
       </div>
       <p className="mb-2">{description}</p>
       <ul className="flex flex-wrap mb-0">
         {tags?.map((tag) => (
           <li
             key={tag}
-            className="text-sm font-normal text-darkTrans bg-darkerTrans rounded-sm px-1 mr-2 mb-2"
+            className="tag text-sm font-normal text-darkTrans1 bg-darkTrans2 rounded border-1 border-darkTrans px-1 mr-2 mb-2 hover:border-white transition-colors"
           >
             {tag}
           </li>
@@ -74,7 +74,7 @@ function ProjectLink({ url, text }: LinkProps) {
     <a
       href={url}
       target="_blank"
-      className={cx('btn-secondary mr-6 mb-2', !url && 'text-darkTrans')}
+      className={cx('btn-secondary mr-6 mb-2', !url && 'text-darkTrans2')}
     >
       {text}
     </a>

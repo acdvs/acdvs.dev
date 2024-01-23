@@ -9,11 +9,9 @@ export default function Home() {
         <div className="h-screen flex justify-center items-center mb-5">
           <div className="max-w-xl px-10 position-absolute top-50 translate-middle-y">
             <div>
-              <div className="flex justify-center">
-                <h1 className="mr-3">Hi, I'm</h1>
-                <h1 className="text-gradient">Adam</h1>
-                <h1>.</h1>
-              </div>
+              <h1 className="text-center">
+                Hi, I'm <span className="text-gradient m-0">Adam</span>.
+              </h1>
               <p className="mb-10 text-center">
                 Full stack software engineer and open source contributor with expertise in
                 UI and UX design.

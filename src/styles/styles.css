@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -10,8 +9,8 @@
     @apply text-white;
   }
 
-  h1 {
-    @apply font-montserrat text-[2.4rem] font-black mb-4 xs:text-[2.8rem];
+  h1, h1 span {
+    @apply font-montserrat text-[2.4rem] xs:text-[2.8rem] font-black leading-[normal] mb-4;
   }
 
   h2 {
@@ -19,17 +18,17 @@
   }
 
   p, span, a, div {
-    @apply font-rubik font-semibold text-white;
+    @apply text-lg font-body text-white;
   }
 
   a {
-    @apply text-blue font-bold decoration-0 uppercase;
+    @apply text-blue font-bold decoration-0 uppercase hover:text-lightBlue transition-colors;
   }
 }
 
 @layer components {
   .btn-primary {
-    @apply border-b-2 text-lg border-transparent py-4 px-4 hover:border-lightBlue hover:text-lightBlue transition-colors;
+    @apply border-b-2 text-lg border-transparent py-4 px-4 hover:border-lightBlue;
 
     &:hover svg {
       @apply fill-lightBlue;
@@ -38,10 +37,6 @@
     & svg {
       @apply h-8 fill-blue transition-colors;
     }
-  }
-
-  .btn-secondary {
-    @apply hover:text-mediumBlue transition-colors;
   }
 }
 

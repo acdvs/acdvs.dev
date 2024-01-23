@@ -3,10 +3,7 @@ const defaultTheme = require('tailwindcss/defaultTheme');
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ['./src/app/**/*.{ts,tsx,mdx}', './src/components/**/*.{ts,tsx,mdx}'],
   theme: {
     colors: {
       darkBlue: '#030b16',
@@ -16,14 +13,17 @@ module.exports = {
       black: '#000000',
       white: '#ffffff',
       transparent: 'transparent',
-      darkTrans: '#ffffff55',
-      darkerTrans: '#ffffff11',
+      darkTrans1: '#ffffff77',
+      darkTrans2: '#ffffff11',
     },
     fontFamily: {
       montserrat: ['Montserrat', ...defaultTheme.fontFamily.sans],
-      rubik: ['Rubik', ...defaultTheme.fontFamily.sans],
+      body: ['Open Sans', ...defaultTheme.fontFamily.sans],
     },
     extend: {
+      borderWidth: {
+        1: '1px',
+      },
       screens: {
         xs: '450px',
       },
