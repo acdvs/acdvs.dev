@@ -12,9 +12,23 @@ function Projects() {
           tags={['TypeScript', 'React', 'WebAssembly', 'Rust', 'WebGL']}
         />
         <Project
+          title="TD-OBSWebSocket"
+          date="2023"
+          description="A TouchDesigner component that creates a two-way WebSocket connection with OBS."
+          tags={['TouchDesigner', 'Python', 'WebSocket']}
+          sourceURL="https://github.com/acdvs/TD-OBSWebSocket"
+        />
+        <Project
+          title="TD-Packager"
+          date="2023"
+          description="A TouchDesigner component that properly packages other components for release."
+          tags={['TouchDesigner', 'Python']}
+          sourceURL="https://github.com/acdvs/TD-Release"
+        />
+        <Project
           title="Go Spotify"
           date="2023"
-          description="A fast Go wrapper for Spotify's Web API"
+          description="A fast Go wrapper for Spotify's Web API."
           tags={['Go']}
           sourceURL="https://github.com/omegastreamtv/Spotify"
         />
@@ -37,7 +51,7 @@ function Projects() {
         <Project
           title="eslint-plugin-suitescript"
           date="2020"
-          description="An NPM package and ESLint plugin for coding with NetSuite's SuiteScript v1/2 API. 500+ weekly downloads."
+          description="An NPM package and ESLint plugin for coding with NetSuite's SuiteScript v1/2 API. 800+ weekly downloads."
           tags={['JavaScript', 'Node.js', 'ESLint', 'AST nodes']}
           sourceURL="https://github.com/acdvs/eslint-plugin-suitescript"
           packageURL="https://www.npmjs.com/package/eslint-plugin-suitescript"
