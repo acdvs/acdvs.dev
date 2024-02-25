@@ -6,16 +6,16 @@ function Skills() {
       <div className="mb-7">
         <h2>Front End</h2>
         <p>
-          TypeScript, JavaScript, React, Redux, Next.js, Tailwind, SCSS, CSS-in-JS, UI/UX
-          design, web accessibility, WebAssembly, WebGL
+          TypeScript, JavaScript, React, Next.js, Tailwind, SCSS, CSS-in-JS, React Query,
+          Zustand, Redux, UI/UX design, web accessibility, WebAssembly, WebGL
         </p>
       </div>
       <div className="mb-7">
         <h2>Back End</h2>
         <p>
-          Node.js, Rust, Go, Python, GraphQL, MongoDB, PostgreSQL, API design, AWS
-          Amplify, AWS EC2, AWS ECS, AWS Lambda, DigitalOcean, microservices, CI/CD, Git,
-          GitHub
+          Node.js, Rust, Go, Python, GraphQL, MongoDB, PostgreSQL, API design,
+          microservices, AWS (S3, EC2, ECS, Lambda, Amplify, VPC), DigitalOcean, CI/CD,
+          Git, GitHub
         </p>
       </div>
       <div className="mb-7">
