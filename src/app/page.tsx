@@ -10,7 +10,7 @@ export default function Home() {
           <div className="max-w-xl px-10 position-absolute top-50 translate-middle-y">
             <div>
               <h1 className="text-center">
-                Hi, I'm <span className="text-gradient m-0">Adam</span>.
+                Hi, I&apos;m <span className="text-gradient m-0">Adam</span>.
               </h1>
               <p className="mb-10 text-center">
                 Full stack software engineer and open source contributor with expertise in
