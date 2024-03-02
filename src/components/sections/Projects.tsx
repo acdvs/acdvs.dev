@@ -12,6 +12,14 @@ function Projects() {
           tags={['TypeScript', 'React', 'WebAssembly', 'Rust', 'WebGL']}
         />
         <Project
+          title="Spotify Playlist Sync"
+          date="2024"
+          description="Sync Spotify playlists across accounts without publicly sharing or collaborating."
+          tags={['TypeScript', 'React', 'Next.js', 'Tailwind', 'React Query', 'Zustand']}
+          liveURL="/spotify-playlist-sync"
+          sourceURL="https://github.com/acdvs/spotify-playlist-sync"
+        />
+        <Project
           title="TD-OBSWebSocket"
           date="2023"
           description="A TouchDesigner component that creates a two-way WebSocket connection with OBS."
