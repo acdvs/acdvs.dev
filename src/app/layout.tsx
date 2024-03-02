@@ -19,11 +19,7 @@ export const metadata: Metadata = {
   },
   metadataBase: new URL('https://adam-davies.me'),
   openGraph: {
-    images: [
-      {
-        url: '/og-image.png',
-      },
-    ],
+    images: '/og-image.png',
   },
 };
 
