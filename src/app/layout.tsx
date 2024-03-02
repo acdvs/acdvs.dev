@@ -1,6 +1,7 @@
+import { Metadata } from 'next';
 import '@/styles/styles.css';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Adam Davies',
   description:
     'Adam Davies is a full stack software engineer and open source contributor with expertise in UI and UX design.',
@@ -15,6 +16,14 @@ export const metadata = {
   ],
   alternates: {
     canonical: 'https://adam-davies.me',
+  },
+  metadataBase: new URL('https://adam-davies.me'),
+  openGraph: {
+    images: [
+      {
+        url: '/og-image.png',
+      },
+    ],
   },
 };
 
