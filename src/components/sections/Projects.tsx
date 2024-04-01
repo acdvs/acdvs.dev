@@ -69,6 +69,7 @@ function Projects() {
           date="2018"
           description="A tool for finding your group's top favorited messages with context in the past month."
           tags={['JavaScript', 'React', 'Node.js']}
+          noLinkText="Update in progress"
         />
         <Project
           title="Super Snake"

@@ -1,15 +1,5 @@
 import cx from 'classnames';
 
-type ProjectProps = {
-  title: string;
-  date: string;
-  description: string;
-  tags?: string[];
-  liveURL?: string;
-  sourceURL?: string;
-  packageURL?: string;
-};
-
 function Project({
   title,
   date,
@@ -18,7 +8,17 @@ function Project({
   liveURL,
   sourceURL,
   packageURL,
-}: ProjectProps) {
+  noLinkText,
+}: {
+  title: string;
+  date: string;
+  description: string;
+  tags?: string[];
+  liveURL?: string;
+  sourceURL?: string;
+  packageURL?: string;
+  noLinkText?: string;
+}) {
   const noLinks = !liveURL && !sourceURL && !packageURL;
 
   return (
@@ -56,7 +56,7 @@ function Project({
         )}
         {noLinks && (
           <li>
-            <ProjectLink text="Under construction" />
+            <ProjectLink text={noLinkText || 'Under construction'} />
           </li>
         )}
       </ul>
@@ -64,12 +64,7 @@ function Project({
   );
 }
 
-type LinkProps = {
-  url?: string;
-  text: string;
-};
-
-function ProjectLink({ url, text }: LinkProps) {
+function ProjectLink({ url, text }: { url?: string; text: string }) {
   return url ? (
     <a
       href={url}
