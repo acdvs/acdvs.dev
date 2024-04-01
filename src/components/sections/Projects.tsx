@@ -31,7 +31,7 @@ function Projects() {
           date="2023"
           description="A TouchDesigner component that properly packages other components for release."
           tags={['TouchDesigner', 'Python']}
-          sourceURL="https://github.com/acdvs/TD-Release"
+          sourceURL="https://github.com/acdvs/TD-Packager"
         />
         <Project
           title="Go Spotify"
