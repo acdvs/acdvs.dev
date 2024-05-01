@@ -7,20 +7,16 @@ function Skills() {
         <h2>Front End</h2>
         <p>
           TypeScript, JavaScript, React, Next.js, Tailwind, SCSS, CSS-in-JS, React Query,
-          Zustand, Redux, UI/UX design, web accessibility, WebAssembly, WebGL
+          Zustand, Redux, WebAssembly, WebGL, UI/UX design, accessibility, Figma
         </p>
       </div>
       <div className="mb-7">
         <h2>Back End</h2>
         <p>
           Node.js, Rust, Go, Python, GraphQL, MongoDB, PostgreSQL, API design,
-          microservices, AWS (S3, EC2, ECS, Lambda, Amplify, VPC), DigitalOcean, CI/CD,
-          Git, GitHub
+          microservices, AWS (S3, EC2, ECS, Lambda, API Gateway, Amplify, VPC),
+          DigitalOcean, CI/CD, Git, GitHub
         </p>
-      </div>
-      <div className="mb-7">
-        <h2>Learning</h2>
-        <p>gRPC, Docker, Kubernetes</p>
       </div>
       <div className="mb-7">
         <h2>Software</h2>
