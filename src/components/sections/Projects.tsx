@@ -49,12 +49,12 @@ function Projects() {
           sourceURL="https://github.com/omegastreamtv/YEAHBUTDVDs"
         />
         <Project
-          title="dealbot.gg"
+          title="Dealbot"
           date="2021"
           description="A Discord bot for quickly and easily looking up PC game deals via IsThereAnyDeal. Currently receives over 10,000 monthly interactions."
           tags={['TypeScript', 'discord.js', 'PostgreSQL', 'Prisma', 'DigitalOcean App']}
-          liveURL="https://dealbot.gg"
-          sourceURL="https://github.com/acdvs/isthereanydeal-lookup"
+          liveURL="https://dealbot.acdvs.dev"
+          sourceURL="https://github.com/acdvs/dealbot"
         />
         <Project
           title="eslint-plugin-suitescript"
