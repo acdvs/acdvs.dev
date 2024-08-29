@@ -17,6 +17,7 @@ export const metadata: Metadata = {
   alternates: {
     canonical: 'https://acdvs.dev',
   },
+  metadataBase: new URL('https://acdvs.dev'),
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
