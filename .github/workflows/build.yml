@@ -21,7 +21,7 @@ jobs:
         run: yarn build
       - name: Flatten to build branch
         run: |
-          git switch out
+          git switch out --
           find . | grep -v "out/**\|.git\b/**" | xargs rm -rf
           mv out/** .
           rm -r out
