@@ -21,8 +21,7 @@ jobs:
         run: yarn build
       - name: Flatten to build branch
         run: |
-          git branch -d out
-          git checkout --orphan out
+          git switch out
           find . | grep -v "out/**\|.git\b/**" | xargs rm -rf
           mv out/** .
           rm -r out
@@ -31,5 +30,5 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git commit -m "Update build"
-          git push origin out
+          git push origin out --force
           
