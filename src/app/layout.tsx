@@ -2,9 +2,9 @@ import { Metadata } from 'next';
 import '@/styles/styles.css';
 
 export const metadata: Metadata = {
-  title: 'Adam Davies',
+  title: 'Adam Davies - Portfolio',
   description:
-    'Adam Davies is a full stack software engineer and open source contributor with expertise in UI and UX design.',
+    'Adam Davies is a full stack software engineer and open source contributor with expertise in UI and UX design. He primarily builds modern front-end experiences with the React ecosystem including Next.js, TypeScript, Tailwind, and more.',
   keywords: [
     'Adam Davies',
     'software engineer',
@@ -12,14 +12,10 @@ export const metadata: Metadata = {
     'full stack',
     'front end',
     'React',
-    'UI design',
+    'UI',
   ],
   alternates: {
-    canonical: 'https://adam-davies.me',
-  },
-  metadataBase: new URL('https://adam-davies.me'),
-  openGraph: {
-    images: '/og-image.png',
+    canonical: 'https://acdvs.dev',
   },
 };
 
