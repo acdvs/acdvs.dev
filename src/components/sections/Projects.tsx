@@ -41,12 +41,12 @@ function Projects() {
           sourceURL="https://github.com/omegastreamtv/Spotify"
         />
         <Project
-          title="yeahbutdvds.com"
+          title="Emote Screensaver"
           date="2022-23"
-          description="A livestream overlay generator that displays a random emote from the user's list in bouncing DVD logo style."
+          description="A livestream overlay generator that displays a random emote from a channel in bouncing DVD screensaver style."
           tags={['TypeScript', 'React', 'Next.js', 'SCSS', 'Bootstrap']}
-          liveURL="https://yeahbutdvds.com"
-          sourceURL="https://github.com/omegastreamtv/YEAHBUTDVDs"
+          liveURL="https://omegastreamtv.github.io/emote-screensaver"
+          sourceURL="https://github.com/omegastreamtv/emote-screensaver"
         />
         <Project
           title="Dealbot"
@@ -62,7 +62,7 @@ function Projects() {
           description="An NPM package and ESLint plugin for coding with NetSuite's SuiteScript v1/2 API. 800+ weekly downloads."
           tags={['JavaScript', 'Node.js', 'ESLint', 'AST nodes']}
           sourceURL="https://github.com/acdvs/eslint-plugin-suitescript"
-          packageURL="https://www.npmjs.com/package/eslint-plugin-suitescript"
+          packageURL="https://npmjs.com/package/eslint-plugin-suitescript"
         />
         <Project
           title="GroupMe Analyzer"
@@ -75,8 +75,8 @@ function Projects() {
           title="Super Snake"
           date="2014"
           description="A recreation of the classic Snake arcade game with a wide range of difficulty modifiers."
-          tags={['JavaScript', 'HTML5 canvas']}
-          liveURL="https://supersnake.adam-davies.me"
+          tags={['JavaScript', 'HTML5 Canvas']}
+          liveURL="https://supersnake.acdvs.dev"
           sourceURL="https://github.com/acdvs/super-snake"
         />
         <p className="text-darkTrans1 text-center col-span-2">
