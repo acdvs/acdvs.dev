@@ -1,4 +1,6 @@
 import { Metadata } from 'next';
+import { GoogleAnalytics } from '@next/third-parties/google';
+
 import '@/styles/styles.css';
 
 export const metadata: Metadata = {
@@ -24,6 +26,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className="scroll-smooth">
       <body className="bg-gradient">{children}</body>
+      <GoogleAnalytics gaId="G-1VFVVMH9QR" />
     </html>
   );
 }
