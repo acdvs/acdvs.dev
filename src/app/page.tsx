@@ -16,25 +16,6 @@ export default function Home() {
                 Full stack software engineer and open source contributor with expertise in
                 UI and UX design.
               </p>
-              <nav>
-                <ul className="flex justify-center">
-                  <li>
-                    <a href="#about" className="btn-primary">
-                      About
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#skills" className="btn-primary">
-                      Skills
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#projects" className="btn-primary">
-                      Projects
-                    </a>
-                  </li>
-                </ul>
-              </nav>
             </div>
           </div>
         </div>
