@@ -1,5 +1,7 @@
 import cx from 'classnames';
 
+import { projects } from '@/data';
+
 function Project({
   title,
   date,
@@ -8,17 +10,8 @@ function Project({
   liveURL,
   sourceURL,
   packageURL,
-  noLinkText,
-}: {
-  title: string;
-  date: string;
-  description: string;
-  tags?: string[];
-  liveURL?: string;
-  sourceURL?: string;
-  packageURL?: string;
-  noLinkText?: string;
-}) {
+  noURL,
+}: (typeof projects)[number]) {
   const noLinks = !liveURL && !sourceURL && !packageURL;
 
   return (
@@ -38,28 +31,12 @@ function Project({
           </li>
         ))}
       </ul>
-      <ul className="flex">
-        {liveURL && (
-          <li>
-            <ProjectLink url={liveURL} text="Website" />
-          </li>
-        )}
-        {sourceURL && (
-          <li>
-            <ProjectLink url={sourceURL} text="GitHub" />
-          </li>
-        )}
-        {packageURL && (
-          <li>
-            <ProjectLink url={packageURL} text="Package" />
-          </li>
-        )}
-        {noLinks && (
-          <li>
-            <ProjectLink text={noLinkText || 'Under construction'} />
-          </li>
-        )}
-      </ul>
+      <div className="flex">
+        {liveURL && <ProjectLink url={liveURL} text="Website" />}
+        {sourceURL && <ProjectLink url={sourceURL} text="GitHub" />}
+        {packageURL && <ProjectLink url={packageURL} text="Package" />}
+        {noLinks && <ProjectLink text={noURL || 'Under construction'} />}
+      </div>
     </li>
   );
 }
