@@ -15,23 +15,20 @@ function Project({
   const noLinks = !liveURL && !sourceURL && !packageURL;
 
   return (
-    <li className="mb-8 md:mb-0 [&:hover_.tag]:text-white">
+    <li className="mb-8 md:mb-0">
       <div className="flex justify-between items-center mb-3">
-        <h2 className="mb-0">{title}</h2>
-        <span className="text-darkTrans1">{date}</span>
+        <h3 className="mb-0">{title}</h3>
+        <span className="text-zinc-100/40">{date}</span>
       </div>
-      <p className="mb-2">{description}</p>
-      <ul className="flex flex-wrap mb-0">
+      <p className="mb-3">{description}</p>
+      <div className="flex flex-wrap mb-3 gap-2">
         {tags?.map((tag) => (
-          <li
-            key={tag}
-            className="tag text-sm font-normal text-darkTrans1 bg-darkTrans2 rounded border-1 border-darkTrans px-1 mr-2 mb-2 hover:border-white transition-colors"
-          >
+          <span key={tag} className="tag">
             {tag}
-          </li>
+          </span>
         ))}
-      </ul>
-      <div className="flex">
+      </div>
+      <div className="flex flex-wrap gap-4">
         {liveURL && <ProjectLink url={liveURL} text="Website" />}
         {sourceURL && <ProjectLink url={sourceURL} text="GitHub" />}
         {packageURL && <ProjectLink url={packageURL} text="Package" />}
@@ -46,12 +43,12 @@ function ProjectLink({ url, text }: { url?: string; text: string }) {
     <a
       href={url}
       target="_blank"
-      className={cx('btn-secondary mr-6 mb-2', !url && 'text-darkTrans2')}
+      className={cx('font-bold uppercase', !url && 'text-darkTrans2')}
     >
       {text}
     </a>
   ) : (
-    <p className="text-darkTrans1 font-bold uppercase mr-6 mb-2">{text}</p>
+    <p className="text-zinc-100/40 font-bold uppercase mr-6 mb-2">{text}</p>
   );
 }
 
