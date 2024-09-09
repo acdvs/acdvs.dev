@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -14,11 +14,15 @@
   }
 
   h1 {
-    @apply text-[2.2rem] mb-4;
+    @apply text-[2rem] mb-4;
   }
 
   h2 {
-    @apply text-[1.8rem] mb-2;
+    @apply text-[1.5rem] mb-3;
+  }
+
+  h3 {
+    @apply font-bold;
   }
 
   p {
@@ -26,7 +30,10 @@
   }
 
   a {
-    @apply text-blue-500 font-bold decoration-0 hover:text-blue-400 fill-blue-500 hover:fill-blue-400 transition-colors;
+    @apply text-blue-500 decoration-0 hover:text-blue-400 fill-blue-500 hover:fill-blue-400 transition-colors;
+  }
+}
+
 @layer components {
   .tag {
     @apply border-2 border-zinc-100/40 rounded-md px-1;
