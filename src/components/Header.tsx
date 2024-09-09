@@ -7,7 +7,7 @@ function Header() {
       <a href="#">
         <Logo className="w-10 h-10" />
       </a>
-      <div className="flex">
+      <div className="flex gap-4">
         <a href="https://linkedin.com/in/adamdavies001" target="_blank">
           <RiLinkedinFill className="w-10 h-10" />
         </a>
