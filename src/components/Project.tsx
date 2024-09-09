@@ -15,7 +15,7 @@ function Project({
   const noLinks = !liveURL && !sourceURL && !packageURL;
 
   return (
-    <li className="mb-8 md:mb-0">
+    <div className="mb-8 md:mb-0">
       <div className="flex justify-between items-center mb-3">
         <h3 className="mb-0">{title}</h3>
         <span className="text-zinc-100/40">{date}</span>
@@ -34,7 +34,7 @@ function Project({
         {packageURL && <ProjectLink url={packageURL} text="Package" />}
         {noLinks && <ProjectLink text={noURL || 'Under construction'} />}
       </div>
-    </li>
+    </div>
   );
 }
 
