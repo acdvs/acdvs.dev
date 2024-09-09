@@ -42,21 +42,17 @@
 
 @layer utilities {
   .bg-gradient {
-    background-color: #000;
+    @apply bg-fixed;
     background: linear-gradient(320deg, #0c183b, #000000);
-    background-attachment: fixed;
   }
 
   .header-gradient {
-    background-color: transparent;
     background: linear-gradient(0deg, transparent, #0f0f0f 50%);
   }
 
   .text-gradient {
-    color: #33b4f7;
-    background: linear-gradient(100deg, #354ffe, #33b4f7);
-    background-clip: text;
+    @apply inline-block text-blue-400 bg-clip-text;
+    background-image: linear-gradient(100deg, #354ffe, #60a5fa);
     -webkit-text-fill-color: transparent;
-    display: inline-block;
   }
 }
