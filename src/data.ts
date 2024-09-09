@@ -92,6 +92,13 @@ export const projects = [
     sourceURL: 'https://github.com/acdvs/TD-Packager',
   },
   {
+    title: 'acdvs.dev',
+    date: '2023',
+    description: 'This website.',
+    tags: ['TypeScript', 'React', 'Tailwind', 'Next.js'],
+    sourceURL: 'https://github.com/acdvs/acdvs.dev',
+  },
+  {
     title: 'Go Spotify',
     date: '2023',
     description: "A fast Go wrapper for Spotify's Web API.",
