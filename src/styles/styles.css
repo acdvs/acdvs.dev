@@ -22,21 +22,7 @@
   }
 
   a {
-    @apply text-blue font-bold decoration-0 uppercase hover:text-lightBlue transition-colors;
-  }
-}
-
-@layer components {
-  .btn-primary {
-    @apply border-b-2 text-lg border-transparent py-4 px-4 hover:border-lightBlue;
-
-    &:hover svg {
-      @apply fill-lightBlue;
-    }
-
-    & svg {
-      @apply h-8 fill-blue transition-colors;
-    }
+    @apply text-blue-500 font-bold decoration-0 uppercase hover:text-blue-400 fill-blue-500 hover:fill-blue-400 transition-colors;
   }
 }
 
