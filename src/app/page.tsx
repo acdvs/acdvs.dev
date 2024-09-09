@@ -1,10 +1,8 @@
-import Header from '@/components/Header';
 import Sections from '@/components/sections';
 
 export default function Home() {
   return (
     <>
-      <Header />
       <main>
         <div className="mb-10">
           <h1>Adam Davies</h1>
