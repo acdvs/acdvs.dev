@@ -3,19 +3,17 @@ import Section from '../Section';
 function About() {
   return (
     <Section title="About">
-      <p className="mb-5">
-        I&apos;m a full stack software engineer with a passion for building pixel-perfect
-        fully accessible UIs, powerful APIs, and performant microservices. I&apos;ve led
-        the planning, design, and execution of numerous impactful features in
-        client-facing roles, improving efficiency by up to five times and greatly
-        simplifying complex processes.
+      <p>
+        I&apos;ve worked with TypeScript, React, and Next.js for my entire career. As
+        someone who has studied design, I&apos;m able to take products and features from
+        start to finish entirely on my own with a natural sense of component design and
+        composition that fits each use case.
       </p>
       <p>
-        I excel in rapidly developing SPAs and MPAs with React, TypeScript, and Next.js,
-        utilizing SSR where possible for minimal TTFB and client bandwidth. I have
-        experience with a variety of back end technologies -- namely Node.js for
-        single-language projects, Golang for fast APIs, and Rust for computation-intensive
-        WebAssembly solutions.
+        In addition to the front end, I have experience with a wide range of back end
+        languages, databases, and other systems. I commonly use Go for building robust
+        APIs, Rust for WebAssembly, and various AWS services like S3, EC2, Lambda, and API
+        Gateway.
       </p>
     </Section>
   );
