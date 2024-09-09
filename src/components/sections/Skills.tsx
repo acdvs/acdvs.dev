@@ -16,14 +16,12 @@ const Group = ({ label, list }: { label: string; list: string[] }) => (
     <h3>{label}</h3>
     <div className="flex flex-1 flex-wrap gap-2">
       {list.map((x) => (
-        <Skill key={x} text={x} />
+        <span key={x} className="tag">
+          {x}
+        </span>
       ))}
     </div>
   </div>
-);
-
-const Skill = ({ text }: { text: string }) => (
-  <span className="border-2 border-zinc-100/40 rounded-md px-1">{text}</span>
 );
 
 export default Skills;
