@@ -1,10 +1,12 @@
 import { RiGithubFill, RiLinkedinFill, RiStackOverflowFill } from '@remixicon/react';
-import BrandIcon from './icons/Brand';
+import Logo from './Logo';
 
 function Header() {
   return (
     <header className="w-full fixed flex justify-between md:p-5 header-gradient transition-[padding]">
-      <BrandIcon />
+      <a href="#" className="btn-primary">
+        <Logo className="w-10" />
+      </a>
       <div className="flex">
         <a
           href="https://linkedin.com/in/adamdavies001"
