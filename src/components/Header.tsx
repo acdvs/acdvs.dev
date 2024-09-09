@@ -1,16 +1,28 @@
+import { RiGithubFill, RiLinkedinFill, RiStackOverflowFill } from '@remixicon/react';
 import BrandIcon from './icons/Brand';
-import LinkedInIcon from './icons/LinkedIn';
-import GitHubIcon from './icons/GitHub';
-import StackOverflowIcon from './icons/StackOverflow';
 
 function Header() {
   return (
     <header className="w-full fixed flex justify-between md:p-5 header-gradient transition-[padding]">
       <BrandIcon />
       <div className="flex">
-        <LinkedInIcon />
-        <GitHubIcon />
-        <StackOverflowIcon />
+        <a
+          href="https://linkedin.com/in/adamdavies001"
+          target="_blank"
+          className="btn-primary"
+        >
+          <RiLinkedinFill className="w-10" />
+        </a>
+        <a href="https://github.com/acdvs" target="_blank" className="btn-primary">
+          <RiGithubFill className="w-10" />
+        </a>
+        <a
+          href="https://stackoverflow.com/users/4881192/adam"
+          target="_blank"
+          className="btn-primary"
+        >
+          <RiStackOverflowFill className="w-10" />
+        </a>
       </div>
     </header>
   );
