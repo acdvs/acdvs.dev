@@ -3,7 +3,7 @@ import Logo from './Logo';
 
 function Header() {
   return (
-    <header className="w-full fixed flex justify-between md:p-5 header-gradient transition-[padding]">
+    <header className="w-full sticky top-0 flex justify-between md:p-5 header-gradient">
       <a href="#" className="btn-primary">
         <Logo className="w-10" />
       </a>
