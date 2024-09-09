@@ -1,11 +1,11 @@
+import Intro from './Intro';
 import About from './About';
 import Skills from './Skills';
 import Projects from './Projects';
 
-const sections = {
+export default {
+  Intro,
   About,
   Skills,
   Projects,
 };
-
-export default sections;
