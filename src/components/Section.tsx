@@ -4,7 +4,7 @@ type Props = React.PropsWithChildren & {
 
 const Section = ({ title, children }: Props) => {
   return (
-    <div className="mb-16">
+    <div className="mb-10">
       {title && <h2 className="text-gradient">{title}</h2>}
       {children}
     </div>
