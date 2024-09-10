@@ -42,8 +42,8 @@
 
 @layer utilities {
   .bg-gradient {
-    @apply bg-fixed;
-    background: linear-gradient(320deg, #0c183b, #000000);
+    @apply bg-fixed bg-blue-950;
+    background: linear-gradient(320deg, #172554, #000000);
   }
 
   .header-gradient {
