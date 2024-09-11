@@ -76,7 +76,7 @@ export const projects = [
     description:
       'Sync Spotify playlists across accounts without publicly sharing or collaborating.',
     tags: ['TypeScript', 'React', 'Next.js', 'Tailwind', 'React Query', 'Zustand'],
-    liveURL: '/spotify-playlist-sync',
+    liveURL: 'https://spotify-playlist-sync.acdvs.dev',
     sourceURL: 'https://github.com/acdvs/spotify-playlist-sync',
   },
   {
@@ -115,7 +115,7 @@ export const projects = [
     description:
       'A livestream overlay generator that displays a random emote from a channel in bouncing DVD screensaver style.',
     tags: ['TypeScript', 'React', 'Next.js', 'SCSS', 'Bootstrap'],
-    liveURL: 'https://omegastreamtv.github.io/emote-screensaver',
+    liveURL: 'https://emote-screensaver.omegastream.tv',
     sourceURL: 'https://github.com/omegastreamtv/emote-screensaver',
   },
   {
@@ -150,7 +150,7 @@ export const projects = [
     description:
       'A recreation of the classic Snake arcade game with a wide range of difficulty modifiers.',
     tags: ['JavaScript', 'HTML5 Canvas'],
-    liveURL: 'https://supersnake.acdvs.dev',
+    liveURL: 'https://super-snake.acdvs.dev',
     sourceURL: 'https://github.com/acdvs/super-snake',
   },
 ];
