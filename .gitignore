@@ -9,10 +9,10 @@
 /coverage
 
 # next.js
-/.next/
+/.next
 
 # production
-/build
+/out
 
 # misc
 .DS_Store
