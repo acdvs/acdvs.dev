@@ -34,12 +34,6 @@
   }
 }
 
-@layer components {
-  .tag {
-    @apply text-sm border-2 border-zinc-100/40 rounded-md px-1 hover:border-white transition-colors hover:cursor-default;
-  }
-}
-
 @layer utilities {
   .bg-gradient {
     @apply bg-fixed bg-blue-950;

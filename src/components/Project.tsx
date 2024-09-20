@@ -1,5 +1,6 @@
 import cx from 'classnames';
 
+import Tag from './Tag';
 import { projects } from '@/data';
 
 function Project({
@@ -23,9 +24,7 @@ function Project({
       <p className="mb-3">{description}</p>
       <div className="flex flex-wrap mb-3 gap-2">
         {tags?.map((tag) => (
-          <span key={tag} className="tag">
-            {tag}
-          </span>
+          <Tag key={tag} label={tag} />
         ))}
       </div>
       <div className="flex flex-wrap gap-4">
