@@ -69,6 +69,23 @@ export const skills = [
 
 export const projects = [
   {
+    title: 'OmegaStream',
+    date: '2024',
+    description:
+      'A streaming utility built from the ground up to maximize customization and viewer interaction. Integrates with Twitch, YouTube, and other services.',
+    tags: [
+      'React',
+      'TypeScript',
+      'Next.js',
+      'Tailwind',
+      'shadcn/ui',
+      'React Query',
+      'SSR',
+      'Vercel',
+    ],
+    liveURL: 'https://omegastream.tv',
+  },
+  {
     title: 'Super Snake 2.0',
     date: '2024',
     description:
