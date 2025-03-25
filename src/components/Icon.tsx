@@ -1,8 +1,4 @@
-type Props = React.PropsWithChildren & {
-  href: string;
-};
-
-function Icon({ href, children }: Props) {
+function Icon({ href, children }: { href: string; children: React.ReactNode }) {
   const target = href.startsWith('#') ? '_self' : '_blank';
 
   return (
