@@ -4,9 +4,9 @@ import { GoogleAnalytics } from '@next/third-parties/google';
 import '@/styles/styles.css';
 
 export const metadata: Metadata = {
-  title: 'Adam Davies - Portfolio',
+  title: 'Adam Davies',
   description:
-    'Adam Davies is a full stack software engineer and open source contributor with expertise in UI and UX design. He primarily builds modern front-end experiences with the React ecosystem including Next.js, TypeScript, Tailwind, and more.',
+    'Adam Davies is a full stack software engineer and open source contributor with expertise in React, design systems, UI/UX design, and many other front and back-end technologies. He primarily builds powerful data-driven websites and performant APIs and microservices.',
   keywords: [
     'Adam Davies',
     'software engineer',
