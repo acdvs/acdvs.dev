@@ -1,7 +1,9 @@
-import Section from '../Section';
-import Project from '../Project';
+import clsx from 'clsx';
 
-import { projects } from '@/data';
+import Section from '../Section';
+import Tag from '../Tag';
+import projects from '@/data/projects';
+import { Project as TProject } from '@/types';
 
 function Projects() {
   return (
@@ -12,6 +14,43 @@ function Projects() {
         ))}
       </div>
     </Section>
+  );
+}
+
+function Project({ title, date, description, tags, links, fallback }: TProject) {
+  return (
+    <div className="mb-8 md:mb-0">
+      <div className="flex justify-between items-center mb-3">
+        <h3 className="mb-0">{title}</h3>
+        <span className="text-zinc-100/40">{date}</span>
+      </div>
+      <p className="mb-3">{description}</p>
+      <div className="flex flex-wrap mb-3 gap-2">
+        {tags?.map((tag) => (
+          <Tag key={tag} label={tag} />
+        ))}
+      </div>
+      <div className="flex flex-wrap gap-4">
+        {links?.website && <ProjectLink url={links?.website} text="Website" />}
+        {links?.source && <ProjectLink url={links?.source} text="Source" />}
+        {links?.package && <ProjectLink url={links?.package} text="Package" />}
+        {!links && <ProjectLink text={fallback || 'Under construction'} />}
+      </div>
+    </div>
+  );
+}
+
+function ProjectLink({ url, text }: { url?: string; text: string }) {
+  return url ? (
+    <a
+      href={url}
+      target="_blank"
+      className={clsx('font-bold uppercase', !url && 'text-darkTrans2')}
+    >
+      {text}
+    </a>
+  ) : (
+    <p className="text-zinc-100/40 font-bold uppercase mr-6 mb-2">{text}</p>
   );
 }
 

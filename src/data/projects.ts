@@ -1,76 +1,19 @@
-export const skills = [
-  {
-    label: 'Front End',
-    list: [
-      'TypeScript',
-      'JavaScript',
-      'React',
-      'Next.js',
-      'Tailwind',
-      'SCSS',
-      'CSS-in-JS',
-      'Material UI',
-      'Zustand',
-      'Redux',
-      'React Query',
-      'WebSockets',
-      'WebAssembly',
-      'WebGL',
-      'Jest',
-      'Mocha',
-      'React Testing Library',
-      'UI/UX design',
-      'WAI-ARIA',
-      'Webpack',
-      'SSR',
-    ],
-  },
-  {
-    label: 'Back End',
-    list: [
-      'Node.js',
-      'Rust',
-      'Go',
-      'Python',
-      'Express.js',
-      'GraphQL',
-      'Apollo Client',
-      'API design',
-      'MongoDB',
-      'PostgreSQL',
-      'microservices',
-      'Vite',
-      'AWS S3',
-      'AWS EC2',
-      'AWS Lambda',
-      'AWS API Gateway',
-      'AWS Amplify',
-      'AWS VPC',
-      'DigitalOcean',
-      'CI/CD',
-      'Git',
-      'GitHub',
-    ],
-  },
-  {
-    label: 'Software',
-    list: [
-      'Figma',
-      'Photoshop',
-      'Illustrator',
-      'After Effects',
-      'Premiere Pro',
-      'InDesign',
-      'TouchDesigner',
-      'Cinema 4D',
-    ],
-  },
-];
+import { Project } from '@/types';
 
-export const projects = [
+export default [
+  {
+    title: 'win-ctx',
+    date: '2025',
+    description: 'A Rust library for managing Windows context menu entries.',
+    tags: ['Rust', 'Windows API'],
+    links: {
+      source: 'https://source.com/acdvs/winctx-rs',
+      package: 'https://crates.io/crates/win-ctx',
+    },
+  },
   {
     title: 'OmegaStream',
-    date: '2024',
+    date: '2024—',
     description:
       'A streaming utility built from the ground up to maximize customization and viewer interaction. Integrates with Twitch, YouTube, and other services.',
     tags: [
@@ -83,7 +26,9 @@ export const projects = [
       'SSR',
       'Vercel',
     ],
-    liveURL: 'https://omegastream.tv',
+    links: {
+      website: 'https://omegastream.tv',
+    },
   },
   {
     title: 'Super Snake 2.0',
@@ -98,8 +43,10 @@ export const projects = [
     description:
       'Sync Spotify playlists across accounts without publicly sharing or collaborating.',
     tags: ['TypeScript', 'React', 'Next.js', 'Tailwind', 'React Query', 'Zustand'],
-    liveURL: 'https://spotify-playlist-sync.acdvs.dev',
-    sourceURL: 'https://github.com/acdvs/spotify-playlist-sync',
+    links: {
+      website: 'https://spotify-playlist-sync.acdvs.dev',
+      source: 'https://source.com/acdvs/spotify-playlist-sync',
+    },
   },
   {
     title: 'TD-OBSWebSocket',
@@ -107,7 +54,9 @@ export const projects = [
     description:
       'A TouchDesigner component that creates a two-way WebSocket connection with OBS.',
     tags: ['TouchDesigner', 'Python', 'WebSocket'],
-    sourceURL: 'https://github.com/acdvs/TD-OBSWebSocket',
+    links: {
+      source: 'https://source.com/acdvs/TD-OBSWebSocket',
+    },
   },
   {
     title: 'TD-Packager',
@@ -115,30 +64,38 @@ export const projects = [
     description:
       'A TouchDesigner component that properly packages other components for release.',
     tags: ['TouchDesigner', 'Python'],
-    sourceURL: 'https://github.com/acdvs/TD-Packager',
+    links: {
+      source: 'https://source.com/acdvs/TD-Packager',
+    },
   },
   {
     title: 'acdvs.dev',
     date: '2023',
     description: 'This website.',
     tags: ['TypeScript', 'React', 'Tailwind', 'Next.js'],
-    sourceURL: 'https://github.com/acdvs/acdvs.dev',
+    links: {
+      source: 'https://source.com/acdvs/acdvs.dev',
+    },
   },
   {
     title: 'Go Spotify',
     date: '2023',
     description: "A fast Go wrapper for Spotify's Web API.",
     tags: ['Go'],
-    sourceURL: 'https://github.com/omegastreamtv/Spotify',
+    links: {
+      source: 'https://source.com/omegastreamtv/Spotify',
+    },
   },
   {
     title: 'Emote Screensaver',
-    date: '2022-23',
+    date: '2022',
     description:
       'A livestream overlay generator that displays a random emote from a channel in bouncing DVD screensaver style.',
     tags: ['TypeScript', 'React', 'Next.js', 'SCSS', 'Bootstrap'],
-    liveURL: 'https://emote-screensaver.omegastream.tv',
-    sourceURL: 'https://github.com/omegastreamtv/emote-screensaver',
+    links: {
+      website: 'https://emote-screensaver.omegastream.tv',
+      source: 'https://source.com/omegastreamtv/emote-screensaver',
+    },
   },
   {
     title: 'Dealbot',
@@ -146,8 +103,10 @@ export const projects = [
     description:
       'A Discord bot for quickly and easily looking up PC game deals via IsThereAnyDeal. Currently receives over 10,000 monthly interactions.',
     tags: ['TypeScript', 'discord.js', 'PostgreSQL', 'Prisma', 'DigitalOcean App'],
-    liveURL: 'https://dealbot.acdvs.dev',
-    sourceURL: 'https://github.com/acdvs/dealbot',
+    links: {
+      website: 'https://dealbot.acdvs.dev',
+      source: 'https://source.com/acdvs/dealbot',
+    },
   },
   {
     title: 'eslint-plugin-suitescript',
@@ -155,8 +114,10 @@ export const projects = [
     description:
       "An NPM package and ESLint plugin for coding with NetSuite's SuiteScript v1/2 API. 800+ weekly downloads.",
     tags: ['JavaScript', 'Node.js', 'ESLint', 'AST nodes'],
-    sourceURL: 'https://github.com/acdvs/eslint-plugin-suitescript',
-    packageURL: 'https://npmjs.com/package/eslint-plugin-suitescript',
+    links: {
+      source: 'https://source.com/acdvs/eslint-plugin-suitescript',
+      package: 'https://npmjs.com/package/eslint-plugin-suitescript',
+    },
   },
   {
     title: 'GroupMe Analyzer',
@@ -164,7 +125,7 @@ export const projects = [
     description:
       "A tool for finding your group's top favorited messages with context in the past month.",
     tags: ['JavaScript', 'React', 'Node.js'],
-    noURL: 'Update in progress',
+    fallback: 'Update in progress',
   },
   {
     title: 'Super Snake',
@@ -172,7 +133,9 @@ export const projects = [
     description:
       'A recreation of the classic Snake arcade game with a wide range of difficulty modifiers.',
     tags: ['JavaScript', 'HTML5 Canvas'],
-    liveURL: 'https://super-snake.acdvs.dev',
-    sourceURL: 'https://github.com/acdvs/super-snake',
+    links: {
+      website: 'https://super-snake.acdvs.dev',
+      source: 'https://source.com/acdvs/super-snake',
+    },
   },
-];
+] satisfies Project[];

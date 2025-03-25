@@ -7,7 +7,7 @@ import {
 import Section from '../Section';
 import Tag from '../Tag';
 
-import { skills } from '@/data';
+import skills from '@/data/skills';
 
 function Skills() {
   return (
