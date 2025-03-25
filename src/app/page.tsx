@@ -1,13 +1,16 @@
-import Sections from '@/components/sections';
+import Intro from '@/components/sections/Intro';
+import About from '@/components/sections/About';
+import Skills from '@/components/sections/Skills';
+import Projects from '@/components/sections/Projects';
 
 export default function Index() {
   return (
     <>
       <div className="max-w-[700px] mx-auto p-5 sm:pt-10">
-        <Sections.Intro />
-        <Sections.About />
-        <Sections.Skills />
-        <Sections.Projects />
+        <Intro />
+        <About />
+        <Skills />
+        <Projects />
       </div>
       <div className="bg-gradient fixed inset-0 -z-10" />
     </>
