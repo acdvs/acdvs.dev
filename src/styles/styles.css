@@ -1,8 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@theme {
+  --font-montserrat: Montserrat, Arial, sans-serif;
+  --font-open-sans: "Open Sans", Arial, sans-serif;
+}
 
 @layer base {
   h1, h2, h3, h4, h5, h6, p, span, a, div {
@@ -18,7 +21,7 @@
   }
 
   h2 {
-    @apply text-[1.5rem] mb-3;
+    @apply text-[1.5rem] mb-3 text-blue-500;
   }
 
   h3 {
@@ -26,27 +29,10 @@
   }
 
   p {
-    @apply mb-2 font-body text-white;
+    @apply font-open-sans mb-2 text-white;
   }
 
   a {
     @apply text-blue-500 decoration-0 hover:text-blue-400 fill-blue-500 hover:fill-blue-400 transition-colors;
-  }
-}
-
-@layer utilities {
-  .bg-gradient {
-    @apply bg-fixed bg-blue-950;
-    background: linear-gradient(320deg, #172554, #000000);
-  }
-
-  .header-gradient {
-    background: linear-gradient(0deg, transparent, #0f0f0f 50%);
-  }
-
-  .text-gradient {
-    @apply inline-block text-blue-400 bg-clip-text;
-    background-image: linear-gradient(100deg, #354ffe, #60a5fa);
-    -webkit-text-fill-color: transparent;
   }
 }

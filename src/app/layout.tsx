@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="bg-slate-950">{children}</body>
       <GoogleAnalytics gaId="G-1VFVVMH9QR" />
     </html>
   );

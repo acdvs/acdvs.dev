@@ -12,7 +12,6 @@ export default function Index() {
         <Skills />
         <Projects />
       </div>
-      <div className="bg-gradient fixed inset-0 -z-10" />
     </>
   );
 }
