@@ -42,11 +42,7 @@ function Project({ title, date, description, tags, links, fallback }: TProject) 
 
 function ProjectLink({ url, text }: { url?: string; text: string }) {
   return url ? (
-    <a
-      href={url}
-      target="_blank"
-      className={clsx('font-bold uppercase', !url && 'text-darkTrans2')}
-    >
+    <a href={url} target="_blank" className="font-bold uppercase">
       {text}
     </a>
   ) : (
