@@ -22,10 +22,10 @@ function Project({ title, date, description, tags, links, fallback }: TProject) 
     <div className="mb-8 md:mb-0">
       <div className="flex justify-between items-center mb-3">
         <h3 className="mb-0">{title}</h3>
-        <span className="text-zinc-100/40">{date}</span>
+        <span className="text-zinc-100/50">{date}</span>
       </div>
       <p className="mb-3">{description}</p>
-      <div className="flex flex-wrap mb-3 gap-2">
+      <div className="flex flex-wrap mb-3 gap-x-1 gap-y-2">
         {tags?.map((tag) => (
           <Tag key={tag} label={tag} />
         ))}

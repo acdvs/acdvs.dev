@@ -21,7 +21,7 @@
   }
 
   h2 {
-    @apply text-[1.5rem] mb-3 text-blue-500;
+    @apply text-[1.5rem] mb-3 text-slate-500;
   }
 
   h3 {
