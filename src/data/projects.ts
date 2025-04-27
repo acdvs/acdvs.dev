@@ -7,7 +7,7 @@ export default [
     description: 'A Rust library for managing Windows context menu entries.',
     tags: ['Rust', 'Windows API'],
     links: {
-      source: 'https://source.com/acdvs/winctx-rs',
+      source: 'https://github.com/acdvs/winctx-rs',
       package: 'https://crates.io/crates/win-ctx',
     },
   },
@@ -45,7 +45,7 @@ export default [
     tags: ['TypeScript', 'React', 'Next.js', 'Tailwind', 'React Query', 'Zustand'],
     links: {
       website: 'https://spotify-playlist-sync.acdvs.dev',
-      source: 'https://source.com/acdvs/spotify-playlist-sync',
+      source: 'https://github.com/acdvs/spotify-playlist-sync',
     },
   },
   {
@@ -55,7 +55,7 @@ export default [
       'A TouchDesigner component that creates a two-way WebSocket connection with OBS.',
     tags: ['TouchDesigner', 'Python', 'WebSocket'],
     links: {
-      source: 'https://source.com/acdvs/TD-OBSWebSocket',
+      source: 'https://github.com/acdvs/TD-OBSWebSocket',
     },
   },
   {
@@ -65,7 +65,7 @@ export default [
       'A TouchDesigner component that properly packages other components for release.',
     tags: ['TouchDesigner', 'Python'],
     links: {
-      source: 'https://source.com/acdvs/TD-Packager',
+      source: 'https://github.com/acdvs/TD-Packager',
     },
   },
   {
@@ -74,7 +74,7 @@ export default [
     description: 'This website.',
     tags: ['TypeScript', 'React', 'Tailwind', 'Next.js'],
     links: {
-      source: 'https://source.com/acdvs/acdvs.dev',
+      source: 'https://github.com/acdvs/acdvs.dev',
     },
   },
   {
@@ -83,7 +83,7 @@ export default [
     description: "A fast Go wrapper for Spotify's Web API.",
     tags: ['Go'],
     links: {
-      source: 'https://source.com/omegastreamtv/Spotify',
+      source: 'https://github.com/omegastreamtv/Spotify',
     },
   },
   {
@@ -94,7 +94,7 @@ export default [
     tags: ['TypeScript', 'React', 'Next.js', 'SCSS', 'Bootstrap'],
     links: {
       website: 'https://emote-screensaver.omegastream.tv',
-      source: 'https://source.com/omegastreamtv/emote-screensaver',
+      source: 'https://github.com/omegastreamtv/emote-screensaver',
     },
   },
   {
@@ -105,7 +105,7 @@ export default [
     tags: ['TypeScript', 'discord.js', 'PostgreSQL', 'Prisma', 'DigitalOcean App'],
     links: {
       website: 'https://dealbot.acdvs.dev',
-      source: 'https://source.com/acdvs/dealbot',
+      source: 'https://github.com/acdvs/dealbot',
     },
   },
   {
@@ -115,7 +115,7 @@ export default [
       "An NPM package and ESLint plugin for coding with NetSuite's SuiteScript v1/2 API. 800+ weekly downloads.",
     tags: ['JavaScript', 'Node.js', 'ESLint', 'AST nodes'],
     links: {
-      source: 'https://source.com/acdvs/eslint-plugin-suitescript',
+      source: 'https://github.com/acdvs/eslint-plugin-suitescript',
       package: 'https://npmjs.com/package/eslint-plugin-suitescript',
     },
   },
@@ -135,7 +135,7 @@ export default [
     tags: ['JavaScript', 'HTML5 Canvas'],
     links: {
       website: 'https://super-snake.acdvs.dev',
-      source: 'https://source.com/acdvs/super-snake',
+      source: 'https://github.com/acdvs/super-snake',
     },
   },
 ] satisfies Project[];
