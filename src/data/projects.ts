@@ -13,7 +13,7 @@ export default [
   },
   {
     title: 'OmegaStream',
-    date: '2024—',
+    date: '2024',
     description:
       'A streaming utility built from the ground up to maximize customization and viewer interaction. Integrates with Twitch, YouTube, and other services.',
     tags: [
@@ -42,7 +42,15 @@ export default [
     date: '2024',
     description:
       'Sync Spotify playlists across accounts without publicly sharing or collaborating.',
-    tags: ['TypeScript', 'React', 'Next.js', 'Tailwind', 'React Query', 'Zustand'],
+    tags: [
+      'TypeScript',
+      'React',
+      'Next.js',
+      'Tailwind',
+      'React Query',
+      'Zustand',
+      'Vercel',
+    ],
     links: {
       website: 'https://spotify-playlist-sync.acdvs.dev',
       source: 'https://github.com/acdvs/spotify-playlist-sync',
@@ -72,7 +80,7 @@ export default [
     title: 'acdvs.dev',
     date: '2023',
     description: 'This website.',
-    tags: ['TypeScript', 'React', 'Tailwind', 'Next.js'],
+    tags: ['TypeScript', 'React', 'Next.js', 'Tailwind', 'Vercel'],
     links: {
       source: 'https://github.com/acdvs/acdvs.dev',
     },
@@ -91,7 +99,7 @@ export default [
     date: '2022',
     description:
       'A livestream overlay generator that displays a random emote from a channel in bouncing DVD screensaver style.',
-    tags: ['TypeScript', 'React', 'Next.js', 'SCSS', 'Bootstrap'],
+    tags: ['TypeScript', 'React', 'Next.js', 'SCSS', 'Bootstrap', 'Vercel'],
     links: {
       website: 'https://emote-screensaver.omegastream.tv',
       source: 'https://github.com/omegastreamtv/emote-screensaver',
