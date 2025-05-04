@@ -8,14 +8,14 @@ function Skills() {
   return (
     <Section title="Skills">
       {skills.map((x) => (
-        <AccordionItem
-          key={x.label}
-          label={x.label}
-          className="flex flex-1 flex-wrap gap-2"
-        >
-          {x.list.map((x) => (
-            <Tag key={x} label={x} />
-          ))}
+        <AccordionItem key={x.label} label={x.label}>
+          <ul className="flex flex-1 flex-wrap gap-2">
+            {x.list.map((x) => (
+              <li key={x}>
+                <Tag label={x} />
+              </li>
+            ))}
+          </ul>
         </AccordionItem>
       ))}
     </Section>
