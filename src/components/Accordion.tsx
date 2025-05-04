@@ -30,7 +30,7 @@ function AccordionItem({
         className={clsx(
           className,
           isOpen ? 'auto-height mb-3' : 'h-0',
-          'overflow-hidden transition-all',
+          'overflow-hidden transition-[height]',
         )}
       >
         {children}

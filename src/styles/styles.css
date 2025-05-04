@@ -39,6 +39,11 @@
 
 @layer utilities {
   .auto-height {
-    height: calc-size(auto, size);
+    @supports (height: calc-size(auto, size)) {
+      height: calc-size(auto, size);
+    }
+    @supports not (height: calc-size(auto, size)) {
+      height: auto;
+    }
   }
 }
