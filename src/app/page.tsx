@@ -5,13 +5,11 @@ import Projects from '@/components/sections/Projects';
 
 export default function Index() {
   return (
-    <>
-      <div className="max-w-[700px] mx-auto p-5 sm:pt-10">
-        <Intro />
-        <About />
-        <Skills />
-        <Projects />
-      </div>
-    </>
+    <main className="max-w-[700px] mx-auto p-5 sm:pt-10">
+      <Intro />
+      <About />
+      <Skills />
+      <Projects />
+    </main>
   );
 }
