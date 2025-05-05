@@ -1,19 +1,19 @@
-export interface Skill {
+export type Skill = {
   label: string;
   list: string[];
-}
+};
 
-export interface Project {
+export type Project = {
   title: string;
   date: string;
   description: string;
   tags: string[];
   links?: Links;
   fallback?: string;
-}
+};
 
-interface Links {
+type Links = {
   website?: string;
   source?: string;
   package?: string;
-}
+};
