@@ -11,7 +11,7 @@ function IntroSection() {
           make a difference. Frequent open source contributor and real-time audiovisual
           hobbyist.
         </p>
-        <div className="row-span-1 sm:row-span-2 flex sm:flex-col gap-4 sm:gap-2 sm:self-start">
+        <aside className="row-span-1 sm:row-span-2 flex sm:flex-col gap-4 sm:gap-2 sm:self-start">
           <a
             href="https://linkedin.com/in/adamdavies001"
             target="_blank"
@@ -36,7 +36,7 @@ function IntroSection() {
             <RiStackOverflowFill className="w-7 h-7" />
             <p className="mb-0 hidden sm:block">Stack Overflow</p>
           </a>
-        </div>
+        </aside>
       </div>
     </Section>
   );
