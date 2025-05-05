@@ -24,7 +24,7 @@ function Project({ title, date, description, tags, links, fallback }: TProject) 
         <span className="text-zinc-100/50">{date}</span>
       </div>
       <p className="mb-3">{description}</p>
-      <ul className="flex flex-wrap mb-3 gap-x-1 gap-y-2">
+      <ul className="flex flex-wrap mb-3 gap-x-1 gap-y-2" aria-label="Built with">
         {tags?.map((tag) => (
           <li key={tag}>
             <Tag label={tag} />
