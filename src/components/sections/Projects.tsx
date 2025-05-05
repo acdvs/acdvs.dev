@@ -1,9 +1,8 @@
-import clsx from 'clsx';
+import Section from '../ui/Section';
+import Tag from '../ui/Tag';
+import type { Project as TProject } from '@/types';
 
-import Section from '../Section';
-import Tag from '../Tag';
 import projects from '@/data/projects';
-import { Project as TProject } from '@/types';
 
 function Projects() {
   return (

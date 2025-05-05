@@ -1,5 +1,5 @@
 import { RiGithubFill, RiLinkedinFill, RiStackOverflowFill } from '@remixicon/react';
-import Section from '../Section';
+import Section from '../ui/Section';
 
 function IntroSection() {
   return (
