@@ -1,9 +1,19 @@
-function Section({ title, children }: { title?: string; children: React.ReactNode }) {
+import clsx from 'clsx';
+
+function Section({
+  title,
+  className,
+  children,
+}: {
+  title?: string;
+  className?: string;
+  children: React.ReactNode;
+}) {
   return (
-    <div className="mb-10">
+    <section className={clsx(className, 'mb-10')}>
       {title && <h2>{title}</h2>}
       {children}
-    </div>
+    </section>
   );
 }
 

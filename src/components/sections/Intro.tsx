@@ -3,8 +3,7 @@ import Section from '../Section';
 
 function IntroSection() {
   return (
-    <Section>
-      <div className="grid grid-cols-[1fr_auto] grid-rows-[auto_1fr] gap-x-14 gap-y-4">
+    <Section className="grid grid-cols-[1fr_auto] grid-rows-[auto_1fr] gap-x-14 gap-y-4">
         <h1 className="mb-0">Adam Davies</h1>
         <p className="order-last col-span-2 sm:col-span-1">
           Full stack engineer building websites and tools that look good, work well, and
