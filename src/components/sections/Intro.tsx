@@ -1,4 +1,6 @@
+import Link from 'next/link';
 import { RiGithubFill, RiLinkedinFill, RiStackOverflowFill } from '@remixicon/react';
+
 import Section from '../ui/Section';
 
 function IntroSection() {
@@ -14,30 +16,30 @@ function IntroSection() {
       </p>
       <aside className="row-span-1 sm:row-span-2 flex sm:flex-col gap-4 sm:gap-2 sm:self-start">
         <h2 className="sr-only">External Links</h2>
-        <a
-          href="https://linkedin.com/in/adamdavies001"
+        <Link
+          href="/linkedin"
           target="_blank"
           className="flex gap-3 items-center"
         >
           <RiLinkedinFill className="size-7" />
           <p className="mb-0 sr-only sm:not-sr-only">LinkedIn</p>
-        </a>
-        <a
-          href="https://github.com/acdvs"
+        </Link>
+        <Link
+          href="/github"
           target="_blank"
           className="flex gap-3 items-center"
         >
           <RiGithubFill className="size-7" />
           <p className="mb-0 sr-only sm:not-sr-only">GitHub</p>
-        </a>
-        <a
-          href="https://stackoverflow.com/users/4881192/adam"
+        </Link>
+        <Link
+          href="/stackoverflow"
           target="_blank"
           className="flex gap-3 items-center"
         >
           <RiStackOverflowFill className="size-7" />
           <p className="mb-0 sr-only sm:not-sr-only">Stack Overflow</p>
-        </a>
+        </Link>
       </aside>
     </Section>
   );
