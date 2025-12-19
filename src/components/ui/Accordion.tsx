@@ -1,8 +1,8 @@
 'use client';
 
-import { createContext, useContext, useState } from 'react';
-import { ChevronDown } from 'lucide-react';
 import clsx from 'clsx';
+import { ChevronDown } from 'lucide-react';
+import { createContext, useContext, useState } from 'react';
 
 type TContextValue = string | null;
 type TContext = {
@@ -19,7 +19,13 @@ const defaultContext = {
 
 const AccordionContext = createContext<TContext>(defaultContext);
 
-function Accordion({ group, children }: { group: string; children: React.ReactNode }) {
+function Accordion({
+  group,
+  children,
+}: {
+  group: string;
+  children: React.ReactNode;
+}) {
   const [activeItem, setActiveItem] = useState<TContextValue>(null);
 
   return (
@@ -52,19 +58,25 @@ function AccordionItem({
 
   return (
     <div className="border-b-2 border-slate-600 hover:border-slate-400">
-      <div
+      <button
+        type="button"
         className="py-2 w-full flex justify-between cursor-pointer"
         onClick={() => setActiveItem(isOpen ? null : label)}
       >
         <h3>
-          <button onKeyDown={onKeyDown} aria-expanded={isOpen} aria-controls={contentId}>
+          <button
+            type="button"
+            onKeyDown={onKeyDown}
+            aria-expanded={isOpen}
+            aria-controls={contentId}
+          >
             {label}
           </button>
         </h3>
         <ChevronDown
           className={clsx(isOpen && 'rotate-180', 'w-5 transition-transform')}
         />
-      </div>
+      </button>
       <div
         id={contentId}
         className={clsx(

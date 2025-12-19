@@ -1,7 +1,7 @@
-import Intro from '@/components/sections/Intro';
 import About from '@/components/sections/About';
-import Skills from '@/components/sections/Skills';
+import Intro from '@/components/sections/Intro';
 import Projects from '@/components/sections/Projects';
+import Skills from '@/components/sections/Skills';
 
 export default function Index() {
   return (

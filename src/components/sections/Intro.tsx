@@ -1,5 +1,9 @@
+import {
+  RiGithubFill,
+  RiLinkedinFill,
+  RiStackOverflowFill,
+} from '@remixicon/react';
 import Link from 'next/link';
-import { RiGithubFill, RiLinkedinFill, RiStackOverflowFill } from '@remixicon/react';
 
 import Section from '../ui/Section';
 
@@ -10,9 +14,9 @@ function IntroSection() {
         <h1 className="mb-0">Adam Davies</h1>
       </header>
       <p className="order-last col-span-2 sm:col-span-1">
-        Full stack engineer building websites and tools that look good, work well, and
-        make a difference. Frequent open source contributor and real-time audiovisual
-        hobbyist.
+        Full stack engineer building websites and tools that look good, work
+        well, and make a difference. Frequent open source contributor and
+        real-time audiovisual hobbyist.
       </p>
       <aside className="row-span-1 sm:row-span-2 flex sm:flex-col gap-4 sm:gap-2 sm:self-start">
         <h2 className="sr-only">External Links</h2>
