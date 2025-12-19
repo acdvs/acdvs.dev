@@ -1,9 +1,9 @@
-import { Project } from '@/types';
+import type { Project } from '@/types';
 
 export default [
   {
     title: 'win-ctx',
-    date: '2025',
+    date: 2025,
     description: 'A Rust library for managing Windows context menu entries.',
     tags: ['Rust', 'Windows API'],
     links: {
@@ -13,7 +13,7 @@ export default [
   },
   {
     title: 'OmegaStream',
-    date: '2024',
+    date: 2024,
     description:
       'A streaming utility built from the ground up to maximize customization and viewer interaction. Integrates with Twitch, YouTube, and other services.',
     tags: [
@@ -23,23 +23,19 @@ export default [
       'Tailwind',
       'shadcn/ui',
       'React Query',
-      'SSR',
       'Vercel',
     ],
-    links: {
-      website: 'https://omegastream.tv',
-    },
   },
   {
     title: 'Super Snake 2.0',
-    date: '2024',
+    date: 2024,
     description:
       'A recreation of the classic Snake arcade game with a wider range of difficulty modifiers.',
-    tags: ['TypeScript', 'React', 'WebAssembly', 'Rust', 'WebGL'],
+    tags: ['TypeScript', 'React', 'WebAssembly', 'Rust', 'WebGPU'],
   },
   {
     title: 'Spotify Playlist Sync',
-    date: '2024',
+    date: 2024,
     description:
       'Sync Spotify playlists across accounts without publicly sharing or collaborating.',
     tags: [
@@ -58,7 +54,7 @@ export default [
   },
   {
     title: 'TD-OBSWebSocket',
-    date: '2023',
+    date: 2023,
     description:
       'A TouchDesigner component that creates a two-way WebSocket connection with OBS.',
     tags: ['TouchDesigner', 'Python', 'WebSocket'],
@@ -68,7 +64,7 @@ export default [
   },
   {
     title: 'TD-Packager',
-    date: '2023',
+    date: 2023,
     description:
       'A TouchDesigner component that properly packages other components for release.',
     tags: ['TouchDesigner', 'Python'],
@@ -78,7 +74,7 @@ export default [
   },
   {
     title: 'acdvs.dev',
-    date: '2023',
+    date: 2023,
     description: 'This website.',
     tags: ['TypeScript', 'React', 'Next.js', 'Tailwind', 'Vercel'],
     links: {
@@ -87,7 +83,7 @@ export default [
   },
   {
     title: 'Go Spotify',
-    date: '2023',
+    date: 2023,
     description: "A fast Go wrapper for Spotify's Web API.",
     tags: ['Go'],
     links: {
@@ -96,7 +92,7 @@ export default [
   },
   {
     title: 'Emote Screensaver',
-    date: '2022',
+    date: 2022,
     description:
       'A livestream overlay generator that displays a random emote from a channel in bouncing DVD screensaver style.',
     tags: ['TypeScript', 'React', 'Next.js', 'SCSS', 'Bootstrap', 'Vercel'],
@@ -107,10 +103,20 @@ export default [
   },
   {
     title: 'Dealbot',
-    date: '2021',
+    date: {
+      start: 2021,
+    },
     description:
-      'A Discord bot for quickly and easily looking up PC game deals via IsThereAnyDeal. Currently receives over 10,000 monthly interactions.',
-    tags: ['TypeScript', 'discord.js', 'PostgreSQL', 'Prisma', 'DigitalOcean App'],
+      'A Discord bot for easy lookup of PC game deals via IsThereAnyDeal. Currently receives over 10,000 monthly interactions.',
+    tags: [
+      'TypeScript',
+      'React',
+      'Next.js',
+      'PostgreSQL',
+      'Supabase',
+      'Vercel',
+      'Railway',
+    ],
     links: {
       website: 'https://dealbot.acdvs.dev',
       source: 'https://github.com/acdvs/dealbot',
@@ -118,7 +124,7 @@ export default [
   },
   {
     title: 'eslint-plugin-suitescript',
-    date: '2020',
+    date: 2020,
     description:
       "An NPM package and ESLint plugin for coding with NetSuite's SuiteScript v1/2 API. 800+ weekly downloads.",
     tags: ['JavaScript', 'Node.js', 'ESLint', 'AST nodes'],
@@ -129,7 +135,7 @@ export default [
   },
   {
     title: 'GroupMe Analyzer',
-    date: '2018',
+    date: 2018,
     description:
       "A tool for finding your group's top favorited messages with context in the past month.",
     tags: ['JavaScript', 'React', 'Node.js'],
@@ -137,7 +143,7 @@ export default [
   },
   {
     title: 'Super Snake',
-    date: '2014',
+    date: 2014,
     description:
       'A recreation of the classic Snake arcade game with a wide range of difficulty modifiers.',
     tags: ['JavaScript', 'HTML5 Canvas'],

@@ -3,9 +3,16 @@ export type SkillGroup = {
   list: string[];
 };
 
+export type ProjectDate =
+  | number
+  | {
+      start: number;
+      end?: number;
+    };
+
 export type Project = {
   title: string;
-  date: string;
+  date: ProjectDate;
   description: string;
   tags: string[];
   links?: Links;
