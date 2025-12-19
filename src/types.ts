@@ -1,4 +1,4 @@
-export type Skill = {
+export type SkillGroup = {
   label: string;
   list: string[];
 };
