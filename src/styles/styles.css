@@ -2,48 +2,61 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
-@theme {
+:root {
+  --foreground: #1d1d1d;
+  --foreground-accent: #b0b0b0;
+  --background: #eeeeee;
+  --background-accent: #d1d1d1;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground: #eeeeee;
+    --foreground-accent: #656fa2;
+    --background: #080a14;
+    --background-accent: #292e46;
+  }
+}
+
+@theme inline {
+  --color-foreground: var(--foreground);
+  --color-foreground-accent: var(--foreground-accent);
+  --color-background: var(--background);
+  --color-background-accent: var(--background-accent);
+
+  --color-primary: var(--color-blue-500);
+  --color-primary-light: var(--color-blue-400);
+
   --font-montserrat: Montserrat, Arial, sans-serif;
   --font-open-sans: "Open Sans", Arial, sans-serif;
 }
 
 @layer base {
   h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6,
-  p,
-  span,
-  a,
-  div {
-    @apply text-white;
-  }
-
-  h1,
   h2 {
-    @apply font-montserrat font-bold leading-none;
+    font-family: var(--font-montserrat);
+    font-weight: bold;
+    line-height: 1;
   }
 
   h1 {
-    @apply text-[2rem] mb-4;
+    font-size: 2rem;
+    @apply mb-4;
   }
 
   h2 {
-    @apply text-[1.5rem] mb-3 text-slate-500;
+    font-size: 1.5rem;
+    color: var(--foreground-accent);
+    @apply mb-3;
   }
 
   h3 {
-    @apply font-bold;
+    font-weight: bold;
   }
 
   p {
-    @apply font-open-sans mb-2 text-white;
-  }
-
-  a {
-    @apply text-blue-500 decoration-0 hover:text-blue-400 fill-blue-500 hover:fill-blue-400 transition-colors;
+    font-family: var(--font-open-sans);
+    @apply mb-2;
   }
 }
 

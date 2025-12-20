@@ -29,7 +29,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-slate-950">{children}</body>
+      <body className="text-foreground bg-background font-open-sans">
+        {children}
+      </body>
       <GoogleAnalytics gaId="G-1VFVVMH9QR" />
     </html>
   );

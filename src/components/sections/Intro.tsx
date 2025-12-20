@@ -45,7 +45,7 @@ function SocialLink({
 
   return (
     <Link href={href} target="_blank" className="flex gap-3 items-center group">
-      <Icon className="size-7 fill-blue-500 group-hover:fill-blue-400 transition-colors" />
+      <Icon className="size-7 fill-primary group-hover:fill-primary-light transition-colors" />
       <p className="mb-0 sr-only sm:not-sr-only">{label}</p>
     </Link>
   );

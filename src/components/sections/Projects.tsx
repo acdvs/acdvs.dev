@@ -42,7 +42,7 @@ function Project({
     <li className="mb-8 md:mb-0">
       <div className="flex justify-between items-center mb-3">
         <h3 className="mb-0">{title}</h3>
-        <span className="text-zinc-100/50">{parsedDate}</span>
+        <span className="text-foreground-accent/70">{parsedDate}</span>
       </div>
       <p className="mb-3">{description}</p>
       <ul
@@ -67,11 +67,17 @@ function Project({
 
 function ProjectLink({ url, text }: { url?: string; text: string }) {
   return url ? (
-    <a href={url} target="_blank" className="font-bold uppercase">
+    <a
+      href={url}
+      target="_blank"
+      className="font-bold uppercase text-primary decoration-0 hover:text-primary-light transition-colors"
+    >
       {text}
     </a>
   ) : (
-    <p className="text-zinc-100/40 font-bold uppercase mr-6 mb-2">{text}</p>
+    <p className="text-foreground-accent/70 font-bold uppercase mr-6 mb-2">
+      {text}
+    </p>
   );
 }
 
