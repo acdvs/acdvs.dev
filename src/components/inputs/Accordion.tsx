@@ -62,17 +62,11 @@ function AccordionItem({
         type="button"
         className="py-2 w-full flex justify-between cursor-pointer"
         onClick={() => setActiveItem(isOpen ? null : label)}
+        onKeyDown={onKeyDown}
+        aria-expanded={isOpen}
+        aria-controls={contentId}
       >
-        <h3>
-          <button
-            type="button"
-            onKeyDown={onKeyDown}
-            aria-expanded={isOpen}
-            aria-controls={contentId}
-          >
-            {label}
-          </button>
-        </h3>
+        <h3>{label}</h3>
         <ChevronDown
           className={clsx(isOpen && 'rotate-180', 'w-5 transition-transform')}
         />
