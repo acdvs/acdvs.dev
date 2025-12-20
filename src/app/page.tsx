@@ -5,7 +5,7 @@ import Skills from '@/components/sections/Skills';
 
 export default function Index() {
   return (
-    <main className="max-w-[700px] mx-auto p-5 sm:pt-10">
+    <main className="max-w-175 mx-auto p-5 sm:pt-10">
       <Intro />
       <About />
       <Skills />
