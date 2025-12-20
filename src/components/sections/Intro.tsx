@@ -1,10 +1,10 @@
 import {
+  type RemixiconComponentType,
   RiGithubFill,
   RiLinkedinFill,
   RiStackOverflowFill,
 } from '@remixicon/react';
 import Link from 'next/link';
-
 import Section from '../Section';
 
 function IntroSection() {
@@ -19,33 +19,35 @@ function IntroSection() {
         real-time audiovisual hobbyist.
       </p>
       <aside className="row-span-1 sm:row-span-2 flex sm:flex-col gap-4 sm:gap-2 sm:self-start">
-        <h2 className="sr-only">External Links</h2>
-        <Link
-          href="/linkedin"
-          target="_blank"
-          className="flex gap-3 items-center"
-        >
-          <RiLinkedinFill className="size-7" />
-          <p className="mb-0 sr-only sm:not-sr-only">LinkedIn</p>
-        </Link>
-        <Link
-          href="/github"
-          target="_blank"
-          className="flex gap-3 items-center"
-        >
-          <RiGithubFill className="size-7" />
-          <p className="mb-0 sr-only sm:not-sr-only">GitHub</p>
-        </Link>
-        <Link
+        <h2 className="sr-only">External links</h2>
+        <SocialLink href="/linkedin" label="LinkedIn" icon={RiLinkedinFill} />
+        <SocialLink href="/github" label="GitHub" icon={RiGithubFill} />
+        <SocialLink
           href="/stackoverflow"
-          target="_blank"
-          className="flex gap-3 items-center"
-        >
-          <RiStackOverflowFill className="size-7" />
-          <p className="mb-0 sr-only sm:not-sr-only">Stack Overflow</p>
-        </Link>
+          label="Stack Overflow"
+          icon={RiStackOverflowFill}
+        />
       </aside>
     </Section>
+  );
+}
+
+function SocialLink({
+  href,
+  label,
+  icon,
+}: {
+  href: string;
+  label: string;
+  icon: RemixiconComponentType;
+}) {
+  const Icon = icon;
+
+  return (
+    <Link href={href} target="_blank" className="flex gap-3 items-center group">
+      <Icon className="size-7 fill-blue-500 group-hover:fill-blue-400 transition-colors" />
+      <p className="mb-0 sr-only sm:not-sr-only">{label}</p>
+    </Link>
   );
 }
 
