@@ -72,7 +72,7 @@ function ProjectLink({ url, text }: { url?: string; text: string }) {
       target="_blank"
       className="font-bold uppercase text-primary decoration-0 hover:text-primary-light transition-colors"
     >
-      {text}
+      [{text}]
     </a>
   ) : (
     <p className="text-foreground-accent/70 font-bold uppercase mr-6 mb-2">
