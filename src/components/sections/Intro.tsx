@@ -20,10 +20,10 @@ function IntroSection() {
       </p>
       <aside className="row-span-1 sm:row-span-2 flex sm:flex-col gap-4 sm:gap-2 sm:self-start">
         <h2 className="sr-only">External links</h2>
-        <SocialLink href="/linkedin" label="LinkedIn" icon={RiLinkedinFill} />
-        <SocialLink href="/github" label="GitHub" icon={RiGithubFill} />
+        <SocialLink type="linkedin" label="LinkedIn" icon={RiLinkedinFill} />
+        <SocialLink type="github" label="GitHub" icon={RiGithubFill} />
         <SocialLink
-          href="/stackoverflow"
+          type="stackoverflow"
           label="Stack Overflow"
           icon={RiStackOverflowFill}
         />
@@ -33,18 +33,22 @@ function IntroSection() {
 }
 
 function SocialLink({
-  href,
+  type,
   label,
   icon,
 }: {
-  href: string;
+  type: string;
   label: string;
   icon: RemixiconComponentType;
 }) {
   const Icon = icon;
 
   return (
-    <Link href={href} target="_blank" className="flex gap-3 items-center group">
+    <Link
+      href={`/sm/${type}`}
+      target="_blank"
+      className="flex gap-3 items-center group"
+    >
       <Icon className="size-7 fill-primary group-hover:fill-primary-light transition-colors" />
       <p className="mb-0 sr-only sm:not-sr-only">{label}</p>
     </Link>
