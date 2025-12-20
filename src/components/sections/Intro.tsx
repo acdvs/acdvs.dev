@@ -5,7 +5,7 @@ import {
 } from '@remixicon/react';
 import Link from 'next/link';
 
-import Section from '../ui/Section';
+import Section from '../Section';
 
 function IntroSection() {
   return (
