@@ -12,21 +12,6 @@ export default [
     },
   },
   {
-    title: 'OmegaStream',
-    date: 2024,
-    description:
-      'A streaming utility built from the ground up to maximize customization and viewer interaction. Integrates with Twitch, YouTube, and other services.',
-    tags: [
-      'React',
-      'TypeScript',
-      'Next.js',
-      'Tailwind',
-      'shadcn/ui',
-      'React Query',
-      'Vercel',
-    ],
-  },
-  {
     title: 'Super Snake 2.0',
     date: 2024,
     description:
@@ -79,15 +64,6 @@ export default [
     tags: ['TypeScript', 'React', 'Next.js', 'Tailwind', 'Vercel'],
     links: {
       source: 'https://github.com/acdvs/acdvs.dev',
-    },
-  },
-  {
-    title: 'Go Spotify',
-    date: 2023,
-    description: "A fast Go wrapper for Spotify's Web API.",
-    tags: ['Go'],
-    links: {
-      source: 'https://github.com/omegastreamtv/Spotify',
     },
   },
   {
