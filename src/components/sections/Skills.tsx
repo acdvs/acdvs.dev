@@ -1,7 +1,7 @@
 import skills from '@/data/skills';
-import { Accordion, AccordionItem } from '../inputs/Accordion';
-import { SectionHeader, SectionRoot } from '../Section';
-import Tag from '../Tag';
+import { Accordion, AccordionItem } from '../inputs/accordion';
+import { SectionHeader, SectionRoot } from '../section';
+import Tag from '../tag';
 
 function Skills() {
   return (

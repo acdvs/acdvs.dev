@@ -1,7 +1,7 @@
 import projects from '@/data/projects';
 import type { ProjectDate, Project as TProject } from '@/types';
-import { SectionHeader, SectionRoot } from '../Section';
-import Tag from '../Tag';
+import { SectionHeader, SectionRoot } from '../section';
+import Tag from '../tag';
 
 const sortedProjects = projects.toSorted((a, b) => {
   const dateA = a.date as ProjectDate;

@@ -1,4 +1,4 @@
-import { SectionHeader, SectionRoot } from '../Section';
+import { SectionHeader, SectionRoot } from '../section';
 
 function About() {
   return (

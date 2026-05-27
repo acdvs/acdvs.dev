@@ -4,7 +4,7 @@ import {
   RiLinkedinFill,
   RiTwitterFill,
 } from '@remixicon/react';
-import { SectionHeader, SectionRoot } from '../Section';
+import { SectionHeader, SectionRoot } from '../section';
 import IconLink from '../icon-link';
 
 function IntroSection() {
