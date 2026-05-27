@@ -12,7 +12,7 @@
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground: #eeeeee;
-    --foreground-accent: #656fa2;
+    --foreground-accent: #bbbbbb;
     --background: #080a14;
     --background-accent: #292e46;
   }
@@ -33,6 +33,12 @@
 
 @layer base {
   h1,
+  h2,
+  h3 {
+    color: var(--foreground);
+  }
+
+  h1,
   h2 {
     font-family: var(--font-montserrat);
     font-weight: bold;
@@ -46,7 +52,6 @@
 
   h2 {
     font-size: 1.5rem;
-    color: var(--foreground-accent);
     @apply mb-3;
   }
 
@@ -54,8 +59,14 @@
     font-weight: bold;
   }
 
-  p {
+  p,
+  span,
+  div {
+    color: var(--foreground-accent);
     font-family: var(--font-open-sans);
+  }
+
+  p {
     @apply mb-2;
   }
 }

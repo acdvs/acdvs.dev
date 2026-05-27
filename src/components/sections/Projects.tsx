@@ -43,12 +43,12 @@ function Project({
   return (
     <li className="mb-8 md:mb-0">
       <div className="flex justify-between items-center mb-3">
-        <h3 className="mb-0">{title}</h3>
-        <span className="text-foreground-accent/70">{parsedDate}</span>
+        <h3 className="text-foreground mb-0">{title}</h3>
+        <span className="text-sm">{parsedDate}</span>
       </div>
       <p className="mb-3">{description}</p>
       <ul
-        className="flex flex-wrap mb-3 gap-x-1 gap-y-2"
+        className="flex flex-wrap mb-5 gap-x-4 gap-y-1"
         aria-label="Built with"
       >
         {tags?.map((tag) => (

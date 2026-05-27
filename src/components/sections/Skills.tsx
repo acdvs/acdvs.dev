@@ -10,10 +10,10 @@ function Skills() {
       <Accordion group="skills">
         {skills.map((x) => (
           <AccordionItem key={x.label} label={x.label}>
-            <ul className="flex flex-1 flex-wrap gap-2">
+            <ul className="flex flex-1 flex-wrap gap-x-4">
               {x.list.map((x) => (
-                <li key={x}>
-                  <Tag label={x} />
+                <li key={x} className="text-sm">
+                  {x}
                 </li>
               ))}
             </ul>

@@ -1,6 +1,6 @@
 function Tag({ label }: { label: string }) {
   return (
-    <span className="text-sm border-2 border-slate-600 rounded-md px-1 cursor-default">
+    <span className="font-mono text-foreground-accent/70 border-b border-foreground-accent/30 text-sm">
       {label}
     </span>
   );

@@ -57,7 +57,7 @@ function AccordionItem({
   };
 
   return (
-    <div className="border-b-2 border-background-accent hover:border-foreground-accent/60 transition-colors">
+    <div className="border-b-2 border-background-accent hover:border-slate-600 transition-colors">
       <button
         type="button"
         className="py-2 w-full flex justify-between cursor-pointer"
@@ -66,9 +66,12 @@ function AccordionItem({
         aria-expanded={isOpen}
         aria-controls={contentId}
       >
-        <span>{label}</span>
+        <span className="font-bold text-foreground">{label}</span>
         <ChevronDown
-          className={clsx(isOpen && 'rotate-180', 'w-5 transition-transform')}
+          className={clsx(
+            isOpen && 'rotate-180',
+            'stroke-foreground w-5 transition-transform',
+          )}
         />
       </button>
       <div
