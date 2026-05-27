@@ -4,14 +4,14 @@ import {
   RiLinkedinFill,
   RiTwitterFill,
 } from '@remixicon/react';
-import { SectionHeader, SectionRoot } from '../section';
 import IconLink from '../icon-link';
+import { SectionHeader, SectionRoot } from '../section';
 
 function IntroSection() {
   return (
     <SectionRoot>
-      <div className='flex justify-between items-center gap-5 mb-4'>
-        <SectionHeader label="Adam Davies" className='mb-0' />
+      <div className="flex justify-between items-center gap-5 mb-4">
+        <SectionHeader label="Adam Davies" className="mb-0" />
         <div className="row-span-1 sm:row-span-2 flex gap-4 sm:gap-2 sm:self-start">
           <h2 className="sr-only">External links</h2>
           <IconLink href="/linkedin" icon={RiLinkedinFill} />

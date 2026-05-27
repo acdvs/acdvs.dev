@@ -4,8 +4,7 @@ export default [
   {
     title: 'eslint-plugin-amd',
     date: 2026,
-    description:
-      "An ESLint plugin for linting AMD module syntax.",
+    description: 'An ESLint plugin for linting AMD module syntax.',
     tags: ['TypeScript', 'Node.js', 'ESLint', 'AST'],
     links: {
       source: 'https://github.com/acdvs/eslint-plugin-amd',
@@ -51,7 +50,7 @@ export default [
   {
     title: 'TD-OBSWebSocket',
     date: {
-      start: 2023
+      start: 2023,
     },
     description:
       'A TouchDesigner component that creates a two-way WebSocket connection with OBS.',
@@ -114,10 +113,10 @@ export default [
   {
     title: 'eslint-plugin-suitescript',
     date: {
-      start: 2020
+      start: 2020,
     },
     description:
-      "An ESLint plugin for linting SuiteScript v1/2 API code. 1200+ weekly downloads.",
+      'An ESLint plugin for linting SuiteScript v1/2 API code. 1200+ weekly downloads.',
     tags: ['JavaScript', 'Node.js', 'ESLint', 'AST'],
     links: {
       source: 'https://github.com/acdvs/eslint-plugin-suitescript',
