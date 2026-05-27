@@ -1,3 +1,4 @@
+import { LucideExternalLink } from 'lucide-react';
 import projects from '@/data/projects';
 import type { ProjectDate, Project as TProject } from '@/types';
 import { SectionHeader, SectionRoot } from '../section';
@@ -71,14 +72,13 @@ function ProjectLink({ url, text }: { url?: string; text: string }) {
     <a
       href={url}
       target="_blank"
-      className="font-bold uppercase text-primary decoration-0 hover:text-primary-light transition-colors"
+      className="flex gap-1 items-center text-sm font-bold uppercase text-primary decoration-0 hover:text-primary-light transition-colors"
+      rel="noopener"
     >
-      [{text}]
+      {text} <LucideExternalLink size={15} className="-mt-px" />
     </a>
   ) : (
-    <p className="text-foreground-accent/70 font-bold uppercase mr-6 mb-2">
-      {text}
-    </p>
+    <p className="text-sm text-foreground-accent font-bold uppercase">{text}</p>
   );
 }
 
