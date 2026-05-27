@@ -1,7 +1,7 @@
 import { GoogleAnalytics } from '@next/third-parties/google';
 import type { Metadata } from 'next';
 
-import '@/styles/styles.css';
+import './styles.css';
 
 export const metadata: Metadata = {
   title: 'Adam Davies',
