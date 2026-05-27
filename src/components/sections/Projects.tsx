@@ -1,6 +1,6 @@
 import projects from '@/data/projects';
 import type { ProjectDate, Project as TProject } from '@/types';
-import Section from '../Section';
+import { SectionHeader, SectionRoot } from '../Section';
 import Tag from '../Tag';
 
 const sortedProjects = projects.toSorted((a, b) => {
@@ -15,13 +15,14 @@ const sortedProjects = projects.toSorted((a, b) => {
 
 function Projects() {
   return (
-    <Section title="Projects">
+    <SectionRoot>
+      <SectionHeader tag="h2" label="Projects" />
       <ul className="md:grid md:gap-x-12 md:gap-y-8 md:auto-rows-auto md:grid-cols-2">
         {sortedProjects.map((x) => (
           <Project key={x.title} {...x} />
         ))}
       </ul>
-    </Section>
+    </SectionRoot>
   );
 }
 

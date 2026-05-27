@@ -1,11 +1,12 @@
 import skills from '@/data/skills';
 import { Accordion, AccordionItem } from '../inputs/Accordion';
-import Section from '../Section';
+import { SectionHeader, SectionRoot } from '../Section';
 import Tag from '../Tag';
 
 function Skills() {
   return (
-    <Section title="Skills">
+    <SectionRoot>
+      <SectionHeader tag="h2" label="Skills" />
       <Accordion group="skills">
         {skills.map((x) => (
           <AccordionItem key={x.label} label={x.label}>
@@ -19,7 +20,7 @@ function Skills() {
           </AccordionItem>
         ))}
       </Accordion>
-    </Section>
+    </SectionRoot>
   );
 }
 

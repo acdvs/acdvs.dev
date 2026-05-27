@@ -5,14 +5,12 @@ import {
   RiStackOverflowFill,
 } from '@remixicon/react';
 import Link from 'next/link';
-import Section from '../Section';
+import { SectionHeader, SectionRoot } from '../Section';
 
 function IntroSection() {
   return (
-    <Section className="grid grid-cols-[1fr_auto] grid-rows-[auto_1fr] gap-x-14 gap-y-4">
-      <header>
-        <h1 className="mb-0">Adam Davies</h1>
-      </header>
+    <SectionRoot className="grid grid-cols-[1fr_auto] grid-rows-[auto_1fr] gap-x-14 gap-y-4">
+      <SectionHeader label="Adam Davies" className="mb-0" />
       <p className="order-last col-span-2 sm:col-span-1">
         Full stack engineer building websites and tools that look good, work
         well, and make a difference. Frequent open source contributor and
@@ -28,7 +26,7 @@ function IntroSection() {
           icon={RiStackOverflowFill}
         />
       </aside>
-    </Section>
+    </SectionRoot>
   );
 }
 
