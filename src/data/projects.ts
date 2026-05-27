@@ -2,6 +2,17 @@ import type { Project } from '@/types';
 
 export default [
   {
+    title: 'eslint-plugin-amd',
+    date: 2026,
+    description:
+      "An ESLint plugin for linting AMD module syntax.",
+    tags: ['TypeScript', 'Node.js', 'ESLint', 'AST'],
+    links: {
+      source: 'https://github.com/acdvs/eslint-plugin-amd',
+      package: 'https://npmjs.com/package/@acdvs/eslint-plugin-amd',
+    },
+  },
+  {
     title: 'win-ctx',
     date: 2025,
     description: 'A Rust library for managing Windows context menu entries.',
@@ -39,7 +50,9 @@ export default [
   },
   {
     title: 'TD-OBSWebSocket',
-    date: 2023,
+    date: {
+      start: 2023
+    },
     description:
       'A TouchDesigner component that creates a two-way WebSocket connection with OBS.',
     tags: ['TouchDesigner', 'Python', 'WebSocket'],
@@ -100,10 +113,12 @@ export default [
   },
   {
     title: 'eslint-plugin-suitescript',
-    date: 2020,
+    date: {
+      start: 2020
+    },
     description:
-      "An NPM package and ESLint plugin for coding with NetSuite's SuiteScript v1/2 API. 800+ weekly downloads.",
-    tags: ['JavaScript', 'Node.js', 'ESLint', 'AST nodes'],
+      "An ESLint plugin for linting SuiteScript v1/2 API code. 1200+ weekly downloads.",
+    tags: ['JavaScript', 'Node.js', 'ESLint', 'AST'],
     links: {
       source: 'https://github.com/acdvs/eslint-plugin-suitescript',
       package: 'https://npmjs.com/package/eslint-plugin-suitescript',
