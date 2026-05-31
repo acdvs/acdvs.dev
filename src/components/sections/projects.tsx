@@ -1,16 +1,12 @@
 import { LucideExternalLink } from 'lucide-react';
 import projects from '@/data/projects';
-import type { ProjectDate, Project as TProject } from '@/types';
+import type { Project as TProject } from '@/types';
 import { SectionHeader, SectionRoot } from '../section';
 import Tag from '../tag';
 
-const sortedProjects = projects.toSorted((a, b) => {
-  const dateA = a.date as ProjectDate;
-  const dateB = b.date as ProjectDate;
-
-  const endA = typeof dateA === 'number' ? dateA : dateA.end || Infinity;
-  const endB = typeof dateB === 'number' ? dateB : dateB.end || Infinity;
-
+const sortedProjects = projects.toSorted((a: TProject, b: TProject) => {
+  const endA = typeof a.date === 'number' ? a.date : a.date.end || Infinity;
+  const endB = typeof b.date === 'number' ? b.date : b.date.end || Infinity;
   return endB - endA;
 });
 
