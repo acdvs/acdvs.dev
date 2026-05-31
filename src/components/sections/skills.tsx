@@ -3,7 +3,7 @@ import { Accordion, AccordionItem } from '../inputs/accordion';
 import { SectionHeader, SectionRoot } from '../section';
 import Tag from '../tag';
 
-function Skills() {
+function SkillsSection() {
   return (
     <SectionRoot>
       <SectionHeader tag="h2">Skills</SectionHeader>
@@ -24,4 +24,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default SkillsSection;

@@ -11,7 +11,7 @@ const sortedProjects = projects.toSorted((a: TProject, b: TProject) => {
   return endB - endA;
 });
 
-function Projects() {
+function ProjectsSection() {
   return (
     <SectionRoot>
       <SectionHeader tag="h2">Projects</SectionHeader>
@@ -74,4 +74,4 @@ function ProjectLink({ url, text }: { url?: string; text: string }) {
   );
 }
 
-export default Projects;
+export default ProjectsSection;

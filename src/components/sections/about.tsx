@@ -1,6 +1,6 @@
 import { SectionHeader, SectionRoot } from '../section';
 
-function About() {
+function AboutSection() {
   return (
     <SectionRoot>
       <SectionHeader tag="h2">About</SectionHeader>
@@ -21,4 +21,4 @@ function About() {
   );
 }
 
-export default About;
+export default AboutSection;
