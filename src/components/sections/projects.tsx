@@ -14,7 +14,7 @@ const sortedProjects = projects.toSorted((a: TProject, b: TProject) => {
 function Projects() {
   return (
     <SectionRoot>
-      <SectionHeader tag="h2" label="Projects" />
+      <SectionHeader tag="h2">Projects</SectionHeader>
       <ul className="md:grid md:gap-x-12 md:gap-y-8 md:auto-rows-auto md:grid-cols-2">
         {sortedProjects.map((x) => (
           <Project key={x.title} {...x} />

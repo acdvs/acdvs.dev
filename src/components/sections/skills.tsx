@@ -5,7 +5,7 @@ import { SectionHeader, SectionRoot } from '../section';
 function Skills() {
   return (
     <SectionRoot>
-      <SectionHeader tag="h2" label="Skills" />
+      <SectionHeader tag="h2">Skills</SectionHeader>
       <Accordion group="skills">
         {skills.map((x) => (
           <AccordionItem key={x.label} label={x.label}>

@@ -11,19 +11,19 @@ function SectionRoot({
 }
 
 function SectionHeader({
+  children,
   className,
-  label,
   tag,
 }: {
+  children: React.ReactNode | string;
   className?: string;
-  label: string;
   tag?: React.HTMLElementType;
 }) {
   const HeadingEl = tag ?? 'h1';
 
   return (
     <header>
-      <HeadingEl className={className}>{label}</HeadingEl>
+      <HeadingEl className={className}>{children}</HeadingEl>
     </header>
   );
 }

@@ -3,7 +3,7 @@ import { SectionHeader, SectionRoot } from '../section';
 function About() {
   return (
     <SectionRoot>
-      <SectionHeader tag="h2" label="About" />
+      <SectionHeader tag="h2">About</SectionHeader>
       <p>
         I&apos;ve worked with TypeScript, React, and Next.js for my entire
         career. As someone who has studied design, I&apos;m able to take
