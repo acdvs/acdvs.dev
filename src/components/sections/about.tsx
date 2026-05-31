@@ -5,17 +5,13 @@ function AboutSection() {
     <SectionRoot>
       <SectionHeader tag="h2">About</SectionHeader>
       <p>
-        I&apos;ve worked with TypeScript, React, and Next.js for my entire
-        career. As someone who has studied design, I&apos;m able to take
-        products and features from start to finish entirely on my own with a
-        natural sense of component design and composition that fits each use
-        case.
+        I've worked with TypeScript, React, and Node for my entire career. I
+        obsess over UI, UX, and accessibility details, and I know what works and
+        what doesn't. I'm a Tailwind and desktop-first design loyalist.
       </p>
       <p>
-        In addition to the front end, I have experience with a wide range of
-        back end languages, databases, and other systems. I commonly use Go for
-        building robust APIs, Rust for WebAssembly, and various AWS services
-        like S3, EC2, Lambda, and API Gateway.
+        Python, Go, and Rust are my favorite back end languages for APIs and
+        services, and I use Postgres whenever I can.
       </p>
     </SectionRoot>
   );
