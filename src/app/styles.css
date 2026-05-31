@@ -61,12 +61,14 @@
 
   p,
   span,
-  div {
+  div,
+  li {
     color: var(--foreground-accent);
     font-family: var(--font-open-sans);
   }
 
-  p {
+  p,
+  li {
     @apply mb-2;
   }
 }
