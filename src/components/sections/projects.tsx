@@ -1,6 +1,7 @@
 import { LucideExternalLink } from 'lucide-react';
 import projects from '@/data/projects';
 import type { Project as TProject } from '@/types';
+import { dateIsRange } from '@/utils';
 import { SectionHeader, SectionRoot } from '../section';
 import Tag from '../tag';
 
@@ -31,10 +32,8 @@ function Project({
   links,
   fallback,
 }: TProject) {
-  const dateEnd =
-    typeof date === 'object' && 'end' in date ? date.end : 'Present';
-  const parsedDate =
-    typeof date === 'number' ? date : `${date.start} - ${dateEnd}`;
+  const dateEnd = (dateIsRange(date) && date.end) ?? 'Present';
+  const parsedDate = dateIsRange(date) ? `${date.start} - ${dateEnd}` : date;
 
   return (
     <li className="mb-8 md:mb-0">
