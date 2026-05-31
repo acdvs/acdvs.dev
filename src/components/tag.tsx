@@ -1,7 +1,20 @@
-function Tag({ label }: { label: string }) {
+import clsx from 'clsx';
+
+function Tag({
+  children,
+  className,
+}: {
+  children: string;
+  className?: string;
+}) {
   return (
-    <span className="font-mono text-foreground-accent/70 border-b border-foreground-accent/30 text-sm">
-      {label}
+    <span
+      className={clsx(
+        'font-mono border-b border-current/30 text-sm',
+        className,
+      )}
+    >
+      {children}
     </span>
   );
 }

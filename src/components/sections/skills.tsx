@@ -1,6 +1,7 @@
 import skills from '@/data/skills';
 import { Accordion, AccordionItem } from '../inputs/accordion';
 import { SectionHeader, SectionRoot } from '../section';
+import Tag from '../tag';
 
 function Skills() {
   return (
@@ -12,7 +13,7 @@ function Skills() {
             <ul className="flex flex-1 flex-wrap gap-x-4">
               {x.list.map((x) => (
                 <li key={x} className="text-sm">
-                  {x}
+                  <Tag>{x}</Tag>
                 </li>
               ))}
             </ul>

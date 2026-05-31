@@ -42,13 +42,10 @@ function Project({
         <span className="text-sm">{parsedDate}</span>
       </div>
       <p className="mb-3">{description}</p>
-      <ul
-        className="flex flex-wrap mb-5 gap-x-4 gap-y-1"
-        aria-label="Built with"
-      >
+      <ul className="flex flex-wrap mb-5 gap-x-4" aria-label="Built with">
         {tags?.map((tag) => (
-          <li key={tag}>
-            <Tag label={tag} />
+          <li key={tag} className="m-0">
+            <Tag className="text-foreground-accent/70">{tag}</Tag>
           </li>
         ))}
       </ul>
